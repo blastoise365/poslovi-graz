@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="sr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Osiguranje — Lehre i ulazni poslovi, Graz</title>
+<link rel="stylesheet" href="../stil.css">
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <h1>Osiguranje — Lehre i ulazni poslovi, Graz</h1>
+  <p>Čekiraj kućicu kad kontaktiraš firmu — kartica se prebacuje u „Završeno“.</p>
+</header>
+
+<details class="izvori">
+  <summary>Gde je traženo i šta treba znati</summary>
+  <p><strong>Pretraženo:</strong>
+    <a href="https://jobs.ams.at/" target="_blank" rel="noopener">AMS „alle jobs“</a>
+    (Versicherung Graz, Lehre Versicherung Graz, Versicherungskaufmann Graz, Lehrling Versicherung Steiermark),
+    <a href="https://www.willhaben.at/jobs/" target="_blank" rel="noopener">willhaben</a>,
+    <a href="https://www.karriere.at/" target="_blank" rel="noopener">karriere.at</a>,
+    jobs.at, steirerjobs.at, plus karijerne stranice firmi (grawe.at, merkur.at,
+    uniqa.at, generali.at, greco.services, wienerstaedtische.at).</p>
+  <p><strong>Rok — važno:</strong> Lehre u osiguranju kreće po pravilu <strong>1. septembra</strong>.
+    Za septembar 2026. je praktično kasno, pa je realna meta <strong>septembar 2027</strong> —
+    a firme primaju prijave mnogo ranije. Zato se javiti <em>sad</em>, i kad nema oglasa.</p>
+  <p><strong>Oznaka „govori naš jezik?“</strong> znači da mi ime osobe zvuči sa naših prostora.
+    To je pretpostavka po imenu i <strong>nije potvrđeno</strong> — svi kontakti rade na nemačkom.</p>
+  <p><strong>Bez oglasa ≠ bez šanse.</strong> Kod Lehre inicijativna prijava
+    (<em>Initiativbewerbung</em>) radi bolje nego kod običnih poslova — mesta se često popune
+    pre nego što oglas izađe.</p>
+</details>
+
+<div class="tabs" role="tablist">
+  <button role="tab" id="tab-aktivno" aria-selected="true">Aktivno <span class="count" id="c-aktivno"></span></button>
+  <button role="tab" id="tab-zavrseno" aria-selected="false">Završeno <span class="count" id="c-zavrseno"></span></button>
+</div>
+
+<div class="toolbar">
+  <input id="q" type="search" placeholder="Pretraga (firma, pozicija, osoba)…">
+  <select id="sort">
+    <option value="preporuka">Sortiraj: preporuka</option>
+    <option value="lehre">Sortiraj: prvo Lehre</option>
+    <option value="oglas">Sortiraj: prvo sa oglasom</option>
+    <option value="firma">Sortiraj: naziv firme</option>
+  </select>
+  <button id="reset" hidden>Poništi moje kvačice</button>
+</div>
+
+<div id="lista"></div>
+
+<footer>
+  <h2>Kako je napravljen redosled</h2>
+  <p>
+    kununu ne dozvoljava automatsko čitanje ocena, pa ovde <strong>nema izmišljenih brojeva</strong>.
+    Svaka kartica ima dugme <em>kununu ↗</em> — jedan klik i vidi se prava ocena poslodavca.
+    Zvezdice su moje rangiranje po: da li firma stvarno prima početnike bez iskustva,
+    da li postoji ime osobe kojoj se piše, da li je centrala u Grazu (tu se otvara najviše mesta),
+    i po tome koliko je konkretan trenutni oglas.
+  </p>
+  <p>
+    Podaci prikupljeni 27.08.2026. Ništa se ne čuva na serveru — kvačice ostaju samo u ovom
+    pretraživaču, na ovom uređaju.
+  </p>
+</footer>
+
+<p class="drugi">Druga lista: <a href="../">poslovi u sanaciji šteta</a></p>
+
+</div>
+
+<script src="podaci.js"></script>
+<script src="../app.js"></script>
+</body>
+</html>

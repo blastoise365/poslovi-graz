@@ -4,71 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Poslovi — sanacija, Graz i okolina</title>
-<style>
-  :root{
-    --bg:#f6f7f9; --card:#fff; --ink:#16191d; --muted:#68717d;
-    --line:#e2e6eb; --accent:#1f6feb; --accent-soft:#e8f0fe;
-    --ok:#137a4b; --ok-soft:#e3f5ec; --warn:#8a5a00; --warn-soft:#fdf3e0;
-  }
-  @media (prefers-color-scheme: dark){
-    :root{
-      --bg:#101317; --card:#191d23; --ink:#e8eaed; --muted:#9aa3af;
-      --line:#2a3038; --accent:#5b9cff; --accent-soft:#1b2740;
-      --ok:#4ecb8d; --ok-soft:#14291f; --warn:#e0b464; --warn-soft:#2a2114;
-    }
-  }
-  *{box-sizing:border-box}
-  body{margin:0;background:var(--bg);color:var(--ink);
-    font:16px/1.55 system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif}
-  .wrap{max-width:900px;margin:0 auto;padding:24px 16px 64px}
-  header h1{font-size:1.5rem;margin:0 0 4px}
-  header p{margin:0;color:var(--muted);font-size:.9rem}
-
-  .izvori{margin-top:16px;border:1px solid var(--line);border-radius:10px;
-    background:var(--card);padding:10px 14px;font-size:.85rem;color:var(--muted)}
-  .izvori summary{cursor:pointer;font-weight:600;color:var(--ink);font-size:.9rem}
-  .izvori p{margin:10px 0 0}
-  .izvori strong{color:var(--ink)}
-  .tabs{display:flex;gap:8px;margin:22px 0 14px;border-bottom:1px solid var(--line)}
-  .tabs button{background:none;border:0;padding:10px 14px;font:inherit;font-weight:600;
-    color:var(--muted);cursor:pointer;border-bottom:2px solid transparent;margin-bottom:-1px}
-  .tabs button[aria-selected="true"]{color:var(--accent);border-bottom-color:var(--accent)}
-  .tabs .count{font-weight:400;opacity:.75}
-
-  .toolbar{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:16px}
-  .toolbar input,.toolbar select,.toolbar button{
-    font:inherit;padding:8px 10px;border:1px solid var(--line);border-radius:8px;
-    background:var(--card);color:var(--ink)}
-  .toolbar input{flex:1;min-width:180px}
-  .toolbar button{cursor:pointer}
-
-  .card{background:var(--card);border:1px solid var(--line);border-radius:12px;
-    padding:14px 16px;margin-bottom:12px;display:flex;gap:14px;align-items:flex-start}
-  .card.done{opacity:.62}
-  .card input[type=checkbox]{width:22px;height:22px;margin-top:3px;flex:none;cursor:pointer;accent-color:var(--accent)}
-  .body{flex:1;min-width:0}
-  .pos{font-weight:650;margin:0 0 2px}
-  .firma{color:var(--accent);font-weight:600;font-size:.95rem;margin:0 0 8px}
-
-  .badges{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:10px}
-  .badge{font-size:.75rem;padding:2px 8px;border-radius:999px;background:var(--accent-soft);color:var(--accent);font-weight:600}
-  .badge.ok{background:var(--ok-soft);color:var(--ok)}
-  .badge.warn{background:var(--warn-soft);color:var(--warn)}
-
-  dl{display:grid;grid-template-columns:auto 1fr;gap:4px 12px;margin:0 0 10px;font-size:.9rem}
-  dt{color:var(--muted);white-space:nowrap}
-  dd{margin:0;min-width:0;overflow-wrap:anywhere}
-  a{color:var(--accent)}
-  .note{font-size:.87rem;color:var(--muted);background:var(--bg);
-    border-left:3px solid var(--line);padding:8px 10px;border-radius:0 6px 6px 0;margin:0}
-  .links{margin-top:10px;display:flex;gap:14px;flex-wrap:wrap;font-size:.87rem}
-
-  .empty{text-align:center;color:var(--muted);padding:48px 16px}
-  footer{margin-top:36px;padding-top:18px;border-top:1px solid var(--line);
-    color:var(--muted);font-size:.83rem}
-  footer h2{font-size:.95rem;color:var(--ink);margin:0 0 6px}
-  @media (max-width:520px){ dl{grid-template-columns:1fr;gap:0 0} dt{margin-top:6px} }
-</style>
+<link rel="stylesheet" href="stil.css">
 </head>
 <body>
 <div class="wrap">
@@ -131,113 +67,11 @@
     pretraživaču, na ovom uređaju.
   </p>
 </footer>
+<p class="drugi">Druga lista: <a href="versicherung/">poslovi u osiguranju (Lehre i ulazne pozicije)</a></p>
 
 </div>
 
 <script src="podaci.js"></script>
-<script>
-const KLJUC = "poslovi-graz-v1";
-
-let stanje = {};
-try { stanje = JSON.parse(localStorage.getItem(KLJUC)) || {}; } catch (e) { stanje = {}; }
-
-function zavrseno(p){
-  return Object.prototype.hasOwnProperty.call(stanje, p.id) ? stanje[p.id] : !!p.vecKontaktirano;
-}
-function snimi(){
-  try { localStorage.setItem(KLJUC, JSON.stringify(stanje)); } catch (e) {}
-}
-
-let tab = "aktivno";
-
-const el   = (id) => document.getElementById(id);
-const esc  = (s) => String(s).replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
-const zvez = (n) => "★".repeat(n) + "☆".repeat(5 - n);
-
-function kartica(p){
-  const done = zavrseno(p);
-  const d = [];
-  if (p.kontakt && p.kontakt !== "—") d.push(["Kontakt osoba", esc(p.kontakt)]);
-  if (p.telefon) d.push(["Telefon", `<a href="tel:${esc(p.telefon.replace(/[^+\d]/g,""))}">${esc(p.telefon)}</a>`]);
-  if (p.email)   d.push(["E-mail", `<a href="mailto:${esc(p.email)}">${esc(p.email)}</a>`]);
-  if (p.adresa)  d.push(["Adresa", esc(p.adresa)]);
-
-  return `
-  <div class="card${done ? " done" : ""}">
-    <input type="checkbox" data-id="${esc(p.id)}" ${done ? "checked" : ""}
-           aria-label="Označi kao kontaktirano">
-    <div class="body">
-      <p class="pos">${esc(p.pozicija)}</p>
-      <p class="firma">${esc(p.firma)}</p>
-      <div class="badges">
-        <span class="badge" title="Moje rangiranje, vidi objašnjenje na dnu">${zvez(p.preporuka)}</span>
-        <span class="badge ok">${esc(p.udaljenost)}</span>
-        ${p.link ? "" : '<span class="badge warn">Nema oglasa — javiti se direktno</span>'}
-      </div>
-      <dl>${d.map(([k,v]) => `<dt>${k}</dt><dd>${v}</dd>`).join("")}</dl>
-      <p class="note">${esc(p.napomena)}</p>
-      <div class="links">
-        ${p.link ? `<a href="${esc(p.link)}" target="_blank" rel="noopener">Oglas ↗</a>` : ""}
-        <a href="${esc(p.kununu)}" target="_blank" rel="noopener">kununu ocena ↗</a>
-        <a href="https://www.google.com/maps/search/${encodeURIComponent(p.firma + " " + (p.adresa || "Graz"))}"
-           target="_blank" rel="noopener">Mapa ↗</a>
-      </div>
-    </div>
-  </div>`;
-}
-
-function crtaj(){
-  const q = el("q").value.trim().toLowerCase();
-  const s = el("sort").value;
-
-  let lista = POSLOVI.filter(p => zavrseno(p) === (tab === "zavrseno"));
-  if (q) lista = lista.filter(p =>
-    [p.firma, p.pozicija, p.adresa, p.udaljenost].join(" ").toLowerCase().includes(q));
-
-  lista.sort((a,b) =>
-      s === "firma" ? a.firma.localeCompare(b.firma, "sr")
-    : s === "oglas" ? (!!b.link - !!a.link) || b.preporuka - a.preporuka
-    : b.preporuka - a.preporuka || a.firma.localeCompare(b.firma, "sr"));
-
-  el("lista").innerHTML = lista.length
-    ? lista.map(kartica).join("")
-    : `<p class="empty">${tab === "zavrseno"
-        ? "Još ništa nije završeno."
-        : (q ? "Nema rezultata za tu pretragu." : "Sve je obrađeno. 👏")}</p>`;
-
-  const brA = POSLOVI.filter(p => !zavrseno(p)).length;
-  el("c-aktivno").textContent  = `(${brA})`;
-  el("c-zavrseno").textContent = `(${POSLOVI.length - brA})`;
-  el("reset").hidden = tab !== "zavrseno";
-}
-
-el("lista").addEventListener("change", e => {
-  const cb = e.target.closest("input[type=checkbox]");
-  if (!cb) return;
-  stanje[cb.dataset.id] = cb.checked;
-  snimi();
-  crtaj();
-});
-
-for (const [id, val] of [["tab-aktivno","aktivno"], ["tab-zavrseno","zavrseno"]]) {
-  el(id).addEventListener("click", () => {
-    tab = val;
-    el("tab-aktivno").setAttribute("aria-selected", String(val === "aktivno"));
-    el("tab-zavrseno").setAttribute("aria-selected", String(val === "zavrseno"));
-    crtaj();
-  });
-}
-
-el("q").addEventListener("input", crtaj);
-el("sort").addEventListener("change", crtaj);
-el("reset").addEventListener("click", () => {
-  if (!confirm("Poništiti sve kvačice koje si ti stavio? (Firme koje su unapred označene ostaju u „Završeno“.)")) return;
-  stanje = {};
-  snimi();
-  crtaj();
-});
-
-crtaj();
-</script>
+<script src="app.js"></script>
 </body>
 </html>

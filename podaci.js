@@ -6,6 +6,8 @@
 // link: null             -> nema oglasa, javlja se direktno (inicijativna prijava).
 // preporuka: 1-5         -> moje rangiranje, vidi objašnjenje na dnu stranice.
 
+const KLJUC = "poslovi-graz-v1";
+
 const POSLOVI = [
   {
     id: "mibag-graz",
@@ -45,6 +47,8 @@ const POSLOVI = [
     pozicija: "Technische_r / Handwerkliche_r Facharbeiter_in — Brand- und Wasserschadensanierung (Region Graz Stadt)",
     link: "https://jobs.ams.at/public/emps/jobs/0dfa33bf-fa71-37aa-b178-3af54851514a",
     kontakt: "Petra Bekavac — HR",
+    kontaktNas: { ime: "Petra Bekavac", uloga: "HR, Polygon Austria", email: "hr.austria@polygongroup.com", telefon: "+43 699 159 590 67" },
+    kontaktAlt: "Centrala Austrija: at@polygongroup.com · +43 50 6142",
     email: "hr.austria@polygongroup.com",
     telefon: "+43 699 159 590 67",
     adresa: "Filijala Graz (adresu potvrditi telefonom) — centrala: IZ NÖ-Süd, Straße 6a, Obj. M75, 2351 Wiener Neudorf",
@@ -77,6 +81,8 @@ const POSLOVI = [
     pozicija: "Trocknungs- / Entfeuchtungstechniker + ProjektleiterIn Sanierung (Lieboch)",
     link: "https://www.steirerjobs.at/f/profi-max-pm-trocknung-sanierungs-gmbh",
     kontakt: "Ing. Richard Wagner — šef filijale Lieboch",
+    kontaktNas: { ime: "Goran Skvorc", uloga: "projektni vođa, Lieboch", email: "skvorc@profi-max.at", telefon: "0676 5319338" },
+    kontaktAlt: "Centrala: office@profi-max.at · +43 720 700828",
     email: "wagner@profi-max.at",
     telefon: "0676 55 23 275",
     adresa: "Filijala Lieboch (kod Graza); druga lokacija: Grazer Straße 23, 8071 Hausmannstätten",
