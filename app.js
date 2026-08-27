@@ -51,6 +51,7 @@ function kartica(p){
       </div>
       <dl>${d.map(([k,v]) => `<dt>${k}</dt><dd>${v}</dd>`).join("")}</dl>
       <p class="note">${esc(p.napomena)}</p>
+      ${p.provereno ? `<p class="verif"><strong>Provereno:</strong> ${esc(p.provereno)}</p>` : ""}
       <div class="links">
         ${p.link ? `<a href="${esc(p.link)}" target="_blank" rel="noopener">Oglas ↗</a>` : ""}
         <a href="${esc(p.kununu)}" target="_blank" rel="noopener">kununu ocena ↗</a>

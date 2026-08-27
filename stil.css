@@ -54,6 +54,9 @@
   a{color:var(--accent)}
   .note{font-size:.87rem;color:var(--muted);background:var(--bg);
     border-left:3px solid var(--line);padding:8px 10px;border-radius:0 6px 6px 0;margin:0}
+  .verif{font-size:.82rem;color:var(--muted);background:var(--ok-soft);
+    border-left:3px solid var(--ok);padding:8px 10px;border-radius:0 6px 6px 0;margin:8px 0 0}
+  .verif strong{color:var(--ok)}
   .links{margin-top:10px;display:flex;gap:14px;flex-wrap:wrap;font-size:.87rem}
 
   .empty{text-align:center;color:var(--muted);padding:48px 16px}
