@@ -105,6 +105,38 @@ const POSLOVI = [
   },
 
   {
+    id: "soluto-sattler",
+    firma: "SOLUTO Sattler Sanierungs GmbH (SOLUTO Štajerska)",
+    pozicija: "Projektleiter_in Brand- & Wasserschadensanierung — 3.593 € bruto/mes.",
+    link: "https://www.willhaben.at/jobs/job/projektleiter-in-brand-wasserschadensanierung/13257419",
+    kontakt: "Kancelarija Štajerska (ime nije objavljeno)",
+    email: "office-sattler@soluto.cc",
+    telefon: "+43 316 293036",
+    adresa: "Feldkirchner Straße 87, 8055 Seiersberg-Pirka (odmah kraj Graza)",
+    udaljenost: "~6 km",
+    preporuka: 5,
+    kununu: "https://www.kununu.com/at/search?q=Soluto",
+    napomena:
+      "Nađeno preko willhaben-a. Profil 1:1 sa Belfor-om: sanacija posle požara i vode, traženje curenja, sanacija cevi bez razbijanja. SOLUTO ima 11 lokacija u Austriji, ova pokriva region Graz–Fürstenfeld–Deutschlandsberg, preko 1.200 naloga godišnje. PAŽNJA: oglas je za projektnog vođu (3.593 € bruto) — to je vodeća pozicija i traži više od terenskog staža. Ali firma je pravi cilj: zvati i pitati za teren (Sanierungstechniker / Trocknung), pa makar inicijativno.",
+    vecKontaktirano: false,
+  },
+  {
+    id: "lieb-bau-weiz",
+    firma: "Lieb Bau Weiz GmbH & Co KG",
+    pozicija: "Vorarbeiter_in 21,96 €/h · Facharbeiter_in 19,99 €/h — sanacija i popravke, mesto rada Graz",
+    link: "https://www.willhaben.at/jobs/job/facharbeiter-in-sanierungs-und-instandsetzungsarbeiten/13257820",
+    kontakt: "Kancelarija (ime nije objavljeno)",
+    email: "office@lieb.at",
+    telefon: "+43 3172 2417-0",
+    adresa: "Mesto rada: Graz · centrala: Birkfelder Straße 40, 8160 Weiz",
+    udaljenost: "Graz",
+    preporuka: 4,
+    kununu: "https://www.kununu.com/at/search?q=Lieb+Bau+Weiz",
+    napomena:
+      "NAJVEĆA SATNICA U LISTI: predradnik 21,96 €/h, majstor 19,99 €/h bruto, oba puno radno vreme sa mestom rada Graz. Velika firma, oko 1.200 zaposlenih. ALI: ovo je opšta sanacija i popravke u građevini, NIJE sanacija šteta od vode i požara — poklapanje sa Belfor profilom je delimično. Vredi zbog para i sigurnosti. Oglas za predradnika: willhaben.at/jobs/job/vorarbeiter-in-sanierungs-und-instandsetzungsarbeiten/13257818",
+    vecKontaktirano: false,
+  },
+  {
     id: "trummer-kalsdorf",
     firma: "Trummer Sanierung GmbH",
     pozicija: "Sušenje, sanacija buđi, sanacija stambenog prostora — videti Karriere",
