@@ -117,8 +117,8 @@ const POSLOVI = [
     preporuka: 5,
     kununu: "https://www.kununu.com/at/search?q=Soluto",
     napomena:
-      "Nađeno preko willhaben-a. Profil 1:1 sa Belfor-om: sanacija posle požara i vode, traženje curenja, sanacija cevi bez razbijanja. SOLUTO ima 11 lokacija u Austriji, ova pokriva region Graz–Fürstenfeld–Deutschlandsberg, preko 1.200 naloga godišnje. PAŽNJA: oglas je za projektnog vođu (3.593 € bruto) — to je vodeća pozicija i traži više od terenskog staža. Ali firma je pravi cilj: zvati i pitati za teren (Sanierungstechniker / Trocknung), pa makar inicijativno.",
-    vecKontaktirano: false,
+      "Već radio ovde — nije mu se svidelo, ne vraćati se. (Oglas: projektni vođa za sanaciju posle požara i vode, 3.593 € bruto, Seiersberg.)",
+    vecKontaktirano: true,
   },
   {
     id: "lieb-bau-weiz",
