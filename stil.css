@@ -73,3 +73,19 @@
   .mini{font-weight:400;font-size:.8em;opacity:.8}
   dd strong{color:var(--ink)}
   .drugi{margin-top:14px;font-size:.85rem;color:var(--muted)}
+
+  /* Blok napomena na vrhu PKA liste */
+  .napomene{margin-top:18px;border:1px solid var(--line);border-left:4px solid var(--accent);
+    border-radius:0 10px 10px 0;background:var(--card);padding:14px 18px;font-size:.9rem}
+  .napomene h2{font-size:1rem;margin:0 0 10px}
+  .napomene h3{font-size:.9rem;margin:16px 0 4px;color:var(--accent)}
+  .napomene p{margin:6px 0}
+  .napomene ol,.napomene ul{margin:6px 0;padding-left:20px}
+  .napomene li{margin:4px 0}
+  .sanse{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px;margin:12px 0}
+  .sansa{background:var(--bg);border:1px solid var(--line);border-radius:8px;padding:10px 12px}
+  .sansa b{display:block;font-size:1.35rem;line-height:1.2}
+  .sansa span{font-size:.78rem;color:var(--muted)}
+  .sansa.dobro b{color:var(--ok)} .sansa.lose b{color:var(--warn)}
+  .kljucno{background:var(--ok-soft);border-left:3px solid var(--ok);
+    padding:10px 12px;border-radius:0 6px 6px 0;margin:12px 0}

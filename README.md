@@ -1,14 +1,29 @@
 # Poslovi — Graz
 
-Dve statičke čekliste. **Ništa se ne čuva na serveru** — kvačice žive samo u
+Tri statičke čekliste. **Ništa se ne čuva na serveru** — kvačice žive samo u
 `localStorage` pretraživača onoga ko gleda stranicu, i svaka lista ima svoj ključ.
 
 | Lista | Putanja | Za koga |
 |---|---|---|
 | Sanacija šteta (voda/požar/buđ) | `/` | rođak sa Belfor iskustvom |
 | Osiguranje — Lehre i ulazni poslovi | `/versicherung/` | rođak koji tek završava školu |
+| PKA — Lehre u apoteci | `/pka/` | isti rođak, druga struka |
 
 Zajednički `stil.css` i `app.js`, svaka lista ima svoj `podaci.js`.
+
+## PKA lista (31.08.2026)
+Drugačiji izvor od ostale dve: okosnica je **WKO Lehrbetriebsübersicht**, zvanični registar
+firmi koje smeju da obučavaju učenike. Za Štajersku i zanimanje PKA upisano je 139 apoteka —
+46 u Grazu, 13 u okolini, i sve su na listi. Taj registar daje samo naziv i adresu, pa su
+telefoni i mejlovi dokupljeni sa sajtova samih apoteka; gde ih nema, kartica ih nema.
+
+Otvorenih **PKA Lehrstelle u Grazu: 0** (u celoj Štajerskoj 1, Stainach). Zato je lista
+rangirana obrnuto od očekivanog: na vrhu su apoteke koje traže *gotovu* PKA i ne mogu da je
+nađu, jer je to apoteka koja će razmisliti o učeniku. Napomene i taj plan stoje u
+`<section class="napomene">` na vrhu `pka/index.html`, ne u `podaci.js`.
+
+Stranica koristi i par novih klasa u zajedničkom `stil.css` (`.napomene`, `.sanse`,
+`.sansa`, `.kljucno`) — ostale dve liste ih ne koriste.
 
 ## Provera podataka (27.08.2026)
 Svi linkovi otvoreni, svi mejl domeni imaju MX zapis, kontakti upoređeni sa zvaničnim
