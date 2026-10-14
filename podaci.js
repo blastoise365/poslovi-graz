@@ -10,6 +10,8 @@
 //
 // Kako dodati firmu: kopiraj jedan blok {...} i izmeni polja.
 // vecKontaktirano: true  -> stavka startuje u tabu "Završeno" i rođak je ne vidi u "Aktivno".
+// status: "prijavio" | "odbijen" | "neodgovara" (+ razlog: "...") -> isto, ali sa oznakom; ovde
+//                           se upisuje spisak koji rođak pošalje dugmetom "Kopiraj spisak".
 // link: null             -> nema oglasa, javlja se direktno (inicijativna prijava).
 // preporuka: 1-5         -> moje rangiranje, vidi objašnjenje na dnu stranice.
 
@@ -143,7 +145,8 @@ const POSLOVI = [
     kununu: "https://www.kununu.com/at/search?q=Soluto",
     napomena:
       "Već radio ovde — nije mu se svidelo, ne vraćati se. (Oglas: projektni vođa za sanaciju posle požara i vode, 3.593 € bruto, Seiersberg.)",
-    vecKontaktirano: true,
+    status: "neodgovara",
+    razlog: "već radio ovde, nije mu se svidelo",
   },
   {
     id: "lieb-bau-weiz",
@@ -324,6 +327,6 @@ const POSLOVI = [
     preporuka: 4,
     kununu: "https://www.kununu.com/at/search?q=Drystar",
     napomena: "Već se prijavio — odbijen.",
-    vecKontaktirano: true,
+    status: "odbijen",
   },
 ];

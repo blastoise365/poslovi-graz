@@ -89,3 +89,17 @@
   .sansa.dobro b{color:var(--ok)} .sansa.lose b{color:var(--warn)}
   .kljucno{background:var(--ok-soft);border-left:3px solid var(--ok);
     padding:10px 12px;border-radius:0 6px 6px 0;margin:12px 0}
+
+  /* Dugmad za oznaku i spisak oznaka (lista sanacija) */
+  .oznake{display:flex;gap:6px;flex-wrap:wrap;margin-top:12px}
+  .oznake button{font:inherit;font-size:.82rem;padding:5px 12px;border:1px solid var(--line);
+    border-radius:999px;background:var(--card);color:var(--ink);cursor:pointer}
+  .oznake button[aria-pressed="true"]{background:var(--accent);border-color:var(--accent);color:#fff}
+  .badge.st-odbijen{background:#fde8e8;color:#a61b1b}
+  .badge.st-neodgovara{background:var(--bg);color:var(--muted);box-shadow:inset 0 0 0 1px var(--line)}
+  #spisak{width:100%;min-height:96px;margin:0 0 16px;padding:8px 10px;font:inherit;font-size:.85rem;
+    border:1px solid var(--line);border-radius:8px;background:var(--card);color:var(--ink)}
+  @media (prefers-color-scheme: dark){
+    .badge.st-odbijen{background:#3a1717;color:#ff9a9a}
+    .oznake button[aria-pressed="true"]{color:#0b1220}
+  }

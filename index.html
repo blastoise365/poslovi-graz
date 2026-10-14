@@ -11,7 +11,8 @@
 
 <header>
   <h1>Poslovi — sanacija šteta, Graz i okolina</h1>
-  <p>Čekiraj kućicu kad kontaktiraš firmu — oglas se prebacuje u „Završeno“.</p>
+  <p>Na dnu svake kartice su dugmad <strong>Prijavio se</strong>, <strong>Odbijen</strong> i
+    <strong>Ne odgovara</strong> — klik prebacuje firmu u „Završeno“, drugi klik na isto dugme je vraća.</p>
 </header>
 
 <details class="izvori">
@@ -48,8 +49,10 @@
     <option value="firma">Sortiraj: naziv firme</option>
     <option value="oglas">Sortiraj: prvo sa oglasom</option>
   </select>
-  <button id="reset" hidden>Poništi moje kvačice</button>
+  <button id="kopiraj" hidden>Kopiraj spisak</button>
+  <button id="reset" hidden>Poništi moje oznake</button>
 </div>
+<textarea id="spisak" readonly hidden aria-label="Spisak oznaka"></textarea>
 
 <div id="lista"></div>
 
@@ -63,8 +66,10 @@
     osobe za kontakt, i po udaljenosti od Graza.
   </p>
   <p>
-    Podaci prikupljeni 27.08.2026. Ništa se ne čuva na serveru — kvačice ostaju samo u ovom
-    pretraživaču, na ovom uređaju.
+    Podaci prikupljeni 27.08.2026. Ništa se ne čuva na serveru — oznake ostaju samo u ovom
+    pretraživaču, na ovom uređaju. Zato pre sledećeg osvežavanja liste u „Završeno“ klikni
+    <em>Kopiraj spisak</em> i pošalji taj tekst: oznake tada postaju trajne, a te firme se ne vraćaju
+    u pretragu (razlog uz „Ne odgovara“ pomaže da se sledeći put traži ono što mu odgovara).
   </p>
 </footer>
 <p class="drugi">Druge liste: <a href="versicherung/">osiguranje (Lehre i ulazne pozicije)</a> ·

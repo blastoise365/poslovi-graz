@@ -11,6 +11,15 @@ Tri statičke čekliste. **Ništa se ne čuva na serveru** — kvačice žive sa
 
 Zajednički `stil.css` i `app.js`, svaka lista ima svoj `podaci.js`.
 
+## Oznake na listi sanacija (14.10.2026)
+Na sanaciji umesto kućice svaka kartica ima tri dugmeta: **Prijavio se**, **Odbijen** i
+**Ne odgovara** (ovo poslednje pita za razlog, nije obavezan). `app.js` ih uključuje samo na
+stranici koja ima dugme `#kopiraj` — osiguranje i PKA i dalje imaju kućicu.
+
+Oznake su i dalje samo u `localStorage`. Dugme **Kopiraj spisak** (tab „Završeno“) daje tekst
+tipa `Odbijen: DRYSTAR Österreich` — pri sledećem osvežavanju liste taj spisak se upiše u
+`podaci.js` kao `status`/`razlog`, pa važi na svakom uređaju, a te firme se ne traže ponovo.
+
 ## PKA lista (31.08.2026)
 Drugačiji izvor od ostale dve: okosnica je **WKO Lehrbetriebsübersicht**, zvanični registar
 firmi koje smeju da obučavaju učenike. Za Štajersku i zanimanje PKA upisano je 139 apoteka —
@@ -42,6 +51,8 @@ Otvori odgovarajući `podaci.js`, kopiraj jedan `{ ... }` blok, izmeni polja.
 
 - `link: null` → nema oglasa, prikazuje "javiti se direktno"
 - `vecKontaktirano: true` → startuje u tabu "Završeno" (rođak je ne vidi u "Aktivno")
+- `status: "prijavio" | "odbijen" | "neodgovara"` (+ `razlog: "..."`) → isto, ali sa oznakom
+  (samo lista sanacija)
 - `preporuka: 1..5` → redosled sortiranja
 - `lehre: true` → LEHRE oznaka (samo lista za osiguranje)
 - `kontaktNas: { ime, uloga, email, telefon }` → oznaka "govori naš jezik?" (pretpostavka po imenu)
