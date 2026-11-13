@@ -1,7 +1,7 @@
 // Lista firmi i oglasa — sanacija šteta (voda / požar / buđ) u Grazu i okolini (~30 km).
-// Podaci prikupljeni 27.08.2026, osveženi 14.10.2026. Telefoni i adrese se menjaju — proveriti pre kontakta.
+// Podaci prikupljeni 27.08.2026, osveženi 14.10.2026 i 13.11.2026. Telefoni i adrese se menjaju — proveriti pre kontakta.
 //
-// PROVERENO 14.10.2026: svi oglasi ponovo otvoreni, kontakti upoređeni sa zvaničnim sajtovima
+// PROVERENO 13.11.2026: svi oglasi ponovo otvoreni, kontakti upoređeni sa zvaničnim sajtovima
 // firmi (stranice tima i filijala, impresum). Šta je potvrđeno stoji u polju "provereno".
 // PAŽNJA na AMS linkove (jobs.ams.at): ta stranica se učitava JavaScript-om, pa se sadržaj
 // oglasa ne može automatski proveriti — link se otvori i kad oglas više ne postoji. Sve što
@@ -21,25 +21,25 @@ const POSLOVI = [
   {
     id: "mibag-graz",
     firma: "MIBAG Sanierungs GmbH",
-    pozicija: "Allrounder / Trockenbauer / Maler / Bodenleger / Fliesenleger (m/w/d)",
-    link: "https://www.mibag.at/jobs",
+    pozicija: "Inicijativna prijava — Allrounder / Trockenbauer / Maler / Bodenleger / Fliesenleger (trenutno nema oglasa za Graz)",
+    link: "https://www.mibag.at/jobs/initiativbewerbung",
     kontakt: "Richard Birkl — šef filijale Graz",
     email: "birkl@mibag.at",
     telefon: "+43 664 8476911",
     adresa: "Auwiesenweg 6, 8055 Graz",
     udaljenost: "Graz",
-    preporuka: 5,
+    preporuka: 4,
     kununu: "https://www.kununu.com/at/search?q=Mibag+Sanierungs",
     provereno:
-      "14.10.2026 sa mibag.at/jobs i mibag.at/standort/graz: svih pet oglasa za Graz (Allrounder, Trockenbauer, Bodenleger, Fliesenleger, Maler) i dalje otvoreno. Richard Birkl (Niederlassungsleitung, birkl@mibag.at, +43 664 8476911), zamenik Mario Veit i adresa Auwiesenweg 6 — bez promena. Plata u oglasima: „Mindestgehalt lt. KV, Bereitschaft zur KV-Überzahlung“, bez cifre.",
+      "13.11.2026 sa mibag.at/jobs i mibag.at/standort/graz: NESTALO — filijala Graz više nema nijedan otvoren oglas („Aktuell sind keine Jobs für diesen Standort ausgeschrieben“); Allrounder, Bodenleger, Fliesenleger i Maler sada se traže samo za druge filijale (Imst, Sierning, Linz, St. Pölten, Villach, Wolkersdorf). Ostaje inicijativna prijava (mibag.at/jobs/initiativbewerbung). Richard Birkl (birkl@mibag.at, +43 664 8476911), zamenik Mario Veit (+43 664 8476997) i adresa Auwiesenweg 6 — bez promena.",
     napomena:
-      "Najbolji pogodak: velika austrijska firma za sanaciju šteta, filijala u Grazu, otvoreni oglasi baš za Graz. Ima ime i mobilni šefa filijale — zvati direktno njega, ne centralu. Centrala Graz: +43 316 426988, info.graz@mibag.at. Ako Birkl ne odgovara, zamenik je Mario Veit (+43/664/8476997, veit@mibag.at). Svi oglasi traže dobar nemački („Fundierte Deutschkenntnisse in Wort und Schrift“). Među 11 ljudi u filijali Graz nema imena sa naših prostora. Orijentir za platu: MIBAG za Bodenleger u Sierningu (Gornja Austrija) nudi 3.300 € bruto mesečno.",
+      "Velika austrijska firma za sanaciju šteta, filijala u Grazu. Oglasa za Graz trenutno NEMA (14.10. ih je bilo pet) — ide se inicijativnom prijavom, ali imamo ime i mobilni šefa filijale: zvati direktno njega, ne centralu, i pitati da li traže nekoga za sanaciju ili sušenje. Centrala Graz: +43 316 426988, info.graz@mibag.at. Ako Birkl ne odgovara, zamenik je Mario Veit (+43/664/8476997, veit@mibag.at). Traže dobar nemački. Među 11 ljudi u filijali Graz nema imena sa naših prostora. Orijentir za platu: MIBAG za Bodenleger u Sierningu (Gornja Austrija) nudi 3.300 € bruto mesečno.",
     vecKontaktirano: false,
   },
   {
     id: "tsd-graz",
     firma: "TSD Brand- und Wasserschaden Sanierung GmbH",
-    pozicija: "Graz: Trocknungsmonteur · Bodenleger · Bautechniker (oglasi važe do 31.12.2026)",
+    pozicija: "Graz: Trocknungsmonteur (3.165 €/mes.) · Bodenleger (3.070 €/mes.) · Bautechniker (3.595 €/mes.) — oglasi važe do 31.03.2027 (Bodenleger do 31.12.2026)",
     link: "https://www.tsd.at/jobs/job-details/trocknungsmonteur",
     kontakt: "Miroslav Stojakovic — šef filijale Graz (Geschäftsführung Standort Graz)",
     kontaktNas: { ime: "Miroslav Stojakovic", uloga: "šef filijale Graz", email: "stojakovic@tsd.at", telefon: "+43 664 88 44 08 51" },
@@ -50,7 +50,7 @@ const POSLOVI = [
     preporuka: 5,
     kununu: "https://www.kununu.com/at/search?q=TSD+Sanierung",
     provereno:
-      "14.10.2026 sa tsd.at (oglasi, stranica filijale Graz, impresum): sva tri oglasa za Graz su otvorena, objavljena u julu 2026, važe do 31.12.2026. NOVO: filijala Graz sada ima objavljeno ime — Miroslav Stojakovic, „Geschäftsführung Standort Graz“, stojakovic@tsd.at, isti mobilni +43 664 88 44 08 51. U filijali radi više od 8 ljudi. Satnica 16,30 €/h za Bodenleger i dalje stoji samo na AMS-u i nije potvrđena; na sajtu firme piše „leistungsgerechte Entlohnung, Überzahlung je nach Qualifikation“.",
+      "13.11.2026 sa tsd.at (oglasi, stranica filijale Graz): sva tri oglasa za Graz i dalje otvorena. NOVO: na sajtu sada stoje mesečne plate — Trocknungsmonteur 3.165 €, Bodenleger 3.070 €, Bautechniker 3.595 € bruto („Gehalt: 3.165,00 €/Monat“, uz „Überzahlung je nach Qualifikation“). Trocknungsmonteur i Bautechniker sada važe do 31.03.2027, Bodenleger i dalje do 31.12.2026. NOVO: sekretarica za Graz je Elke Flachberger (office@tsd.at, +43 662 48 08 44). Miroslav Stojakovic, mobilni +43 664 88 44 08 51, graz@tsd.at i Plabutscherstraße 18 — bez promena.",
     napomena:
       "Identičan profil kao Belfor (požar + voda od 1991), 7 lokacija, preko 100 zaposlenih. Trocknungsmonteur u Grazu je tačno njegov posao: „Auf- und Abbau der Trocknungen bei unseren Wasserschäden und Brandschäden“ — zanat (instalater ili električar) je prednost, ali nije uslov. ŠEF FILIJALE JE MIROSLAV STOJAKOVIC — po imenu verovatno naš čovek: zvati njega direktno na mobilni. Prijava pisano na graz@tsd.at ili stojakovic@tsd.at. Traže nemački „in Wort und Schrift“. Druga dva oglasa (Bodenleger, Bautechniker): tsd.at/tsd-jobangebote.",
     vecKontaktirano: false,
@@ -61,8 +61,8 @@ const POSLOVI = [
     pozicija: "Handwerker/Allrounder — Leckortung, demontaža, suvi zid (min. 2.900 € bruto) · Technische:r Projektleiter:in (min. 3.000 €) — filijala Graz",
     link: "https://www.polygongroup.com/de-AT/karriere/stellenangebote-neu/techniker-ganz-%C3%B6/",
     kontakt: "Robert Tropper — šef filijale „Graz“ (Frohnleiten)",
-    kontaktNas: { ime: "Petra Bekavac", uloga: "HR, Polygon Austria", email: "hr.austria@polygongroup.com", telefon: "+43 699 159 590 67" },
-    kontaktAlt: "HR: Petra Bekavac · hr.austria@polygongroup.com · +43 699 159 590 67 (na stranici sa oglasima piše +43 699 15 95 90 52 — probati oba) · centrala Austrija: at@polygongroup.com · +43 50 6142",
+    kontaktNas: { ime: "Petra Bekavac", uloga: "HR, Polygon Austria", email: "hr.austria@polygongroup.com", telefon: "+43 699 15 95 90 52" },
+    kontaktAlt: "HR: Petra Bekavac · hr.austria@polygongroup.com · +43 699 15 95 90 52 · centrala Austrija: at@polygongroup.com · +43 50 6142",
     email: "robert.tropper@polygongroup.com",
     telefon: "+43 676 840 227 306",
     adresa: "Filijala „Graz“ je stvarno u Frohnleiten-u: Technologiepark Frohnleiten, Grazer Straße 10, 8130 Frohnleiten (~25 km severno od Graza)",
@@ -70,7 +70,7 @@ const POSLOVI = [
     preporuka: 5,
     kununu: "https://www.kununu.com/at/search?q=Polygon+Austria",
     provereno:
-      "14.10.2026 sa polygongroup.com: NOVO — na karijernoj stranici firme sada stoje dva oglasa čije mesto rada uključuje Graz (oglas važi za „ganz Österreich“, a među filijalama je izričito navedena Graz): Handwerker/Allrounder, „Das Mindestgehalt beträgt EUR 2.900,00 brutto pro Monat bei 40 Wochenstunden“, i Technische:r Projektleiter:in, minimum 3.000 €. Iste oglase na karriere.at (10. i 12.10.2026) objavljuje agencija PMC International. Robert Tropper i adresa u Frohnleiten-u bez promena. Petra Bekavac: mejl isti, ali sajt navodi dva broja. Stari AMS oglas „Region Graz Stadt“ (2.300 €) nije nađen nigde drugde.",
+      "13.11.2026 sa polygongroup.com i karriere.at: oba oglasa (Allrounder „Mindestgehalt EUR 2.900,00 brutto“, Projektleiter min. 3.000 €, mesto rada „ganz Österreich“ uključujući Graz) i dalje na sajtu firme. Oglas agencije PMC na karriere.at je istekao („Abgelaufen“). Petra Bekavac: na sajtu sada stoji samo +43 699 15 95 90 52. NIJE POTVRĐENO: Robert Tropper i adresa u Frohnleiten-u — sajt sada navodi samo centralu u Wr. Neudorf-u.",
     napomena:
       "Direktan konkurent Belfor-u — internacionalna grupa (18 zemalja), preko 100 zaposlenih u Austriji. Allrounder oglas je njegov posao: među zadacima su Leckortung, demontaža i rušenje, suvi zid; „Eine abgeschlossene Lehre ist wünschenswert, aber kein Muss“. Traže dobar nemački za razgovor sa mušterijama. Najbolje prvo pozvati Petru Bekavac (HR, po imenu verovatno govori naš jezik), reći da je u pitanju filijala Graz/Frohnleiten, pa poslati prijavu na hr.austria@polygongroup.com — tako se zaobilazi agencija PMC sa karriere.at (koja prima prijave samo preko svog portala). Filijala „Graz“ je fizički u Frohnleiten-u, ~25 km severno; šef je Robert Tropper.",
     vecKontaktirano: false,
@@ -78,8 +78,8 @@ const POSLOVI = [
   {
     id: "sms-graz",
     firma: "SMS Austria GmbH (SMS Group)",
-    pozicija: "Tischler_in — sanacija i renoviranje, Graz (+ pitati za Trocknungstechniker)",
-    link: "https://www.sms-teampower.com/at/career/tischler-graz-260626/",
+    pozicija: "Inicijativna prijava — Trocknungstechniker / Sanierungstechniker, Graz (oglas za Tischler-a uklonjen)",
+    link: "https://www.sms-teampower.com/at/career/",
     kontakt: "Harald Perko — šef filijale Graz",
     kontaktNas: { ime: "Davor Pusic, Velid Suvic", uloga: "tehničari za sušenje u filijali Graz — kolege, bez direktnog kontakta" },
     kontaktAlt: "Prijava telefonom (centralna linija za prijave, pon–pet 08–18): +43 664 80390538 · karriere@sms-teampower.com · zamenik šefa filijale: Florian Krainer (veštak za buđ)",
@@ -90,29 +90,29 @@ const POSLOVI = [
     preporuka: 4,
     kununu: "https://www.kununu.com/at/search?q=SMS+Austria",
     provereno:
-      "14.10.2026 sa sms-group.at/locations/graz i sms-teampower.com: oglas za Tischler-a u Grazu je aktivan (objavljen 26.06.2026), plata „Überzahlung möglich“ — cifra 2.059,41 € stoji samo na AMS-u. Harald Perko, +43 316 271 548, graz@sms-group.at, Johann-Strauß-Gasse 15, radno vreme pon–čet 07:30–16:30, pet 07:30–13:30 — tačno. ISPRAVLJENO: +43 664 80390538 NIJE Perkov mobilni, nego centralna linija za prijave (isti broj stoji i na oglasima za Leibnitz i Wolfsberg). U spisku tima filijale Graz: „Trocknungstechnik — Davor Pusic, Velid Suvic“.",
+      "13.11.2026 sa sms-teampower.com i sms-group.at/locations/graz: NESTALO — oglas za Tischler-a u Grazu je uklonjen (link vraća 404), a ni stari oglas za Leibnitz više nije na listi. Jedini novi oglas za Graz je Projektleiter (28.10.2026), traži „verhandlungssichere Deutsch-Kenntnisse“ — nije za njega. Harald Perko, +43 316 271 548, graz@sms-group.at, Johann-Strauß-Gasse 15 i ekipa za sušenje (Davor Pusic, Velid Suvic) — bez promena.",
     napomena:
-      "Od 2005. specijalizovani za kompletnu sanaciju šteta u Štajerskoj (voda, požar, leckortung, suvi led, buđ). Jedini oglas za Graz je Tischler (podovi, unutrašnja sanacija, stolarija); dovoljan je nemački „za svakodnevni razgovor“. U ekipi za sušenje u Grazu rade Davor Pusic i Velid Suvic — po imenima verovatno naši, pa bi tu radio sa ljudima koji govore naš jezik. Kad zoveš Perka, pitaj da li im treba još jedan Trocknungstechniker u Grazu. Ako mu Leibnitz (~35–40 km) nije daleko, tamo stoji oglas baš za Allrounder / Sanierungstechniker / Trocknungstechniker (star, iz jula 2025 — proveriti telefonom).",
+      "Od 2005. specijalizovani za kompletnu sanaciju šteta u Štajerskoj (voda, požar, leckortung, suvi led, buđ). Oglas za Tischler-a u Grazu je skinut; za Graz sada stoji samo Projektleiter, koji traži odličan nemački — nije za njega. U ekipi za sušenje u Grazu rade Davor Pusic i Velid Suvic — po imenima verovatno naši, pa bi tu radio sa ljudima koji govore naš jezik. Zvati Perka, pitati da li im treba još jedan Trocknungstechniker u Grazu, pa poslati inicijativnu prijavu na karriere@sms-teampower.com.",
     vecKontaktirano: false,
   },
   {
     id: "profimax-lieboch",
     firma: "PM Trocknungs und Sanierungs GmbH „Profi MAX“",
-    pozicija: "Leckortungstechniker Graz/Lieboch (od 3.200 € bruto) · Sanierungs-/Entfeuchtungstechniker Lieboch (KV min. 2.624,41 €)",
+    pozicija: "Montagetischler · Fliesenleger — Graz/Graz-Umgebung (2.906,40 € bruto) · Leckortungstechniker, sve filijale (2.207,08 € + Überzahlung)",
     link: "https://www.profi-max.at/de/service/jobs/",
-    kontakt: "Ing. Richard Wagner — šef filijale Lieboch",
-    kontaktNas: { ime: "Goran Skvorc", uloga: "projektni vođa, Lieboch", email: "skvorc@profi-max.at", telefon: "0676 5319338" },
-    kontaktAlt: "Prijave: Leckortung → office@profi-max.at · Sanierungstechniker → graz.office@profi-max.at · centrala: +43 720 700828",
-    email: "wagner@profi-max.at",
-    telefon: "0676 55 23 275",
+    kontakt: "Kevin Wondrak — projektni vođa, Lieboch (šef filijale nije objavljen)",
+    kontaktNas: { ime: "Miroslav Micic", uloga: "projektni vođa za kanalizaciju i Leckortung (filijala nije navedena)", email: "micic@profi-max.at", telefon: "0664 78977314" },
+    kontaktAlt: "Prijave za sve oglase: office@profi-max.at · kancelarija Lieboch: graz.office@profi-max.at (Karin Braunstein 0720/700 828 73, Nicole Kalcher 0720/700 828 74) · projektni vođa Lieboch: Daniel Moser 0676/73 38 094 · centrala: +43 720 700828",
+    email: "wondrak@profi-max.at",
+    telefon: "0676 55 31 064",
     adresa: "Industriestraße West 6, 8501 Lieboch (centrala firme: Hauptplatz 6, 8291 Burgau)",
     udaljenost: "~15 km",
-    preporuka: 5,
+    preporuka: 4,
     kununu: "https://www.kununu.com/at/search?q=Profi+Max+Trocknung",
     provereno:
-      "14.10.2026 sa profi-max.at (jobs + tim): NOVO — dva oglasa za filijalu Lieboch, teren „Graz, Graz-Umgebung“ (PDF od 09.09.2026): Leckortungstechniker, „Verdienstmöglichkeiten ab EUR 3.200,-- brutto als Facharbeiter (Mindest-KV EUR 2.624,41 brutto) mit der Bereitschaft zur Überzahlung, Diäten, Zulagen“, i Sanierungstechniker (Entfeuchtungstechniker, Montagetischler, Maurer), KV minimum 2.624,41 €. NESTALO: ProjektleiterIn za Lieboch (jobs.at vraća „nicht mehr verfügbar“; projektni vođa se sada traži samo za Siegendorf). Wagner, Skvorc, Wondrak, Moser i adresa Industriestraße West 6 — bez promena.",
+      "13.11.2026 sa profi-max.at (jobs, tim, filijala Lieboch): PROMENJENO — Richard Wagner i Goran Skvorc više nisu na sajtu; u Lieboch-u su navedeni samo projektni vođe Kevin Wondrak i Daniel Moser i kancelarija (graz.office@profi-max.at). NESTALO: oglas za Sanierungs-/Entfeuchtungstechniker u Lieboch-u. Leckortungstechniker je sada za „Alle Standorte“, plata „EUR 2.207,08 … Überzahlungsbereitschaft“ — cifre 3.200 € više nema. NOVO: Montagetischler i Fliesenleger za „Graz, Graz-Umgebung“, „Gehalt EUR 2.906,40“; oba traže završen zanat. Prijave za sve na office@profi-max.at. Miroslav Micic je sada „Projektleitung Kanal- und Leckortungstechnik“.",
     napomena:
-      "Preko 110 zaposlenih, 6 lokacija. Oba oglasa su Belfor posao: odvlaživanje/sušenje 1:1, a Leckortung (traženje curenja) nosi od 3.200 € bruto mesečno plus dnevnice i dodatke. Goran Skvorc (projektni vođa u Lieboch-u, 0676 5319338) — po imenu verovatno govori naš jezik, najbolji prvi kontakt. U firmi je i Miroslav Micic (projektni vođa za kanalizaciju i cevi, 0664 78977314, micic@profi-max.at; filijala nije navedena). Ostali projektni vođe u Lieboch-u: Kevin Wondrak (0676 55 31 064), Daniel Moser (0676 73 38 094).",
+      "Preko 110 zaposlenih, 6 lokacija; sušenje i odvlaživanje kao kod Belfora. Oglas za Sanierungs-/Entfeuchtungstechniker u Lieboch-u je skinut. Za Graz i okolinu sada stoje Montagetischler i Fliesenleger (2.906,40 € bruto + dnevnice i dodaci), ali oba traže završen zanat; Leckortungstechniker (traženje curenja) važi za sve filijale, po KV-u od 2.207,08 € uz Überzahlung. Goran Skvorc i šef filijale Wagner više nisu na sajtu. Za razgovor na našem jeziku: Miroslav Micic (projektni vođa za kanalizaciju i Leckortung, 0664 78977314) — pitati ga da li u Lieboch-u traže nekoga za Leckortung ili sušenje. Projektni vođe u Lieboch-u: Kevin Wondrak (0676 55 31 064), Daniel Moser (0676 73 38 094). Prijave za sve oglase na office@profi-max.at.",
     vecKontaktirano: false,
   },
   {
@@ -128,7 +128,7 @@ const POSLOVI = [
     preporuka: 3,
     kununu: "https://www.kununu.com/at/search?q=Pleinimmo",
     provereno:
-      "14.10.2026 sa pleinimmo.at (impresum, „Über uns“): ISPRAVLJENO — direktor i osnivač je Dipl.-Ing. Niklas Pleunik („stehe als direkter Ansprechpartner zur Verfügung“); ime „Martin Höfler“ koje je ranije stajalo ovde ne pojavljuje se nigde na sajtu. Adresa je Rösselmühlgasse 15/5. Telefon iz impresuma +43 664 1820058 je isti kao ovde (na drugim stranicama sajta piše …1820085, verovatno greška u kucanju). Oglas i dalje postoji samo na AMS-u — nema ga na willhaben-u, karriere.at ni jobs.at, a firma nema Karriere stranicu.",
+      "13.11.2026 sa pleinimmo.at (impresum, „Über uns“, kontakt): Dipl.-Ing. Niklas Pleunik, Rösselmühlgasse 15/5, +43 664 1820058 i office@pleinimmo.at — bez promena. Firma i dalje nema Karriere stranicu, na karriere.at nema oglasa; AMS oglas se ne može automatski proveriti (stranica se učitava JavaScript-om) — nepotvrđeno.",
     napomena:
       "Nađeno preko AMS-a, nije bilo ni na jednom drugom portalu — i sajt firme nema Karriere stranicu, pa je oglas nepotvrđen. Najavljena satnica je visoka (19,99 €/h bruto po građevinskom kolektivnom ugovoru), ali firma postoji od maja 2024. i vrlo je mala, pa proveriti telefonom pre nego što se računa na to. Sanacije stanova po Grazu i Štajerskoj. Prednost: direktan kontakt sa vlasnikom, prijava ne zapinje u HR-u.",
     vecKontaktirano: false,
@@ -154,26 +154,26 @@ const POSLOVI = [
   {
     id: "lieb-bau-weiz",
     firma: "Lieb Bau Weiz GmbH & Co KG",
-    pozicija: "Vorarbeiter_in 21,96 €/h · Facharbeiter_in 19,99 €/h — sanacija i popravke, mesto rada Graz",
-    link: "https://www.willhaben.at/jobs/job/facharbeiter-in-sanierungs-und-instandsetzungsarbeiten/13257820",
+    pozicija: "Oglasi za sanaciju istekli · sada: Maurer/Betonbauer Facharbeiter 19,99 €/h (LB 26 012) / Vorarbeiter 21,96 €/h (LB 26 011), Hochbau Štajerska — traži se zanat zidara",
+    link: "https://www.lieb.at/jobangebote/maurer-betonbauer-facharbeiterin-hochbau-steiermark/",
     kontakt: "Charlotte Leitgeber — šefica kadrovske službe (Abteilungsleiterin Personal)",
     kontaktAlt: "Centrala: office@lieb.at · +43 3172 2417-0",
     email: "charlotte.leitgeber@lieb.at",
     telefon: "+43 3172 2417-165",
-    adresa: "Mesto rada: Graz · centrala: Birkfelder Straße 40, 8160 Weiz",
-    udaljenost: "Graz",
-    preporuka: 4,
+    adresa: "Mesto rada: Štajerska (gradilišta) · centrala: Birkfelder Straße 40, 8160 Weiz",
+    udaljenost: "Štajerska",
+    preporuka: 2,
     kununu: "https://www.kununu.com/at/search?q=Lieb+Bau+Weiz",
     provereno:
-      "14.10.2026 sa willhaben-a i lieb.at: oba oglasa obnovljena 08.10.2026 i važe do 14.12.2026. Mesto rada „Graz & Umgebung“, satnice po KV-u: Facharbeiter 19,99 €/h, Vorarbeiter 21,96 €/h, obe „+ Bereitschaft zur Überzahlung“. ISPRAVLJENO: šifra oglasa za Facharbeiter je LB 26 006, a za Vorarbeiter LB 26 005 (ranije je ovde stajala samo jedna šifra). NOVO: kadrovska služba ima ime — Charlotte Leitgeber, +43 3172 2417-165, charlotte.leitgeber@lieb.at.",
+      "13.11.2026 sa willhaben-a i lieb.at: NESTALO — oba oglasa za sanaciju i popravke (LB 26 006 i LB 26 005) skinuta pre roka: willhaben „Diese Anzeige ist nicht mehr verfügbar“, a na lieb.at ih više nema. Iste satnice (19,99 €/h i 21,96 €/h) sada stoje samo uz oglase za Maurer/Betonbauer Hochbau Steiermark (LB 26 012 / LB 26 011), koji traže završen zanat zidara. Charlotte Leitgeber (+43 3172 2417-165, charlotte.leitgeber@lieb.at) — bez promena.",
     napomena:
-      "NAJVEĆA SATNICA U LISTI: predradnik 21,96 €/h, majstor 19,99 €/h bruto, oba puno radno vreme sa mestom rada Graz i okolina. Velika firma, oko 1.200 zaposlenih. VAŽNO: u prijavi OBAVEZNO navesti šifru oglasa — LB 26 006 (Facharbeiter) ili LB 26 005 (Vorarbeiter) — tako izričito pišu, bez toga prijava lako propadne. Primaju i cele ekipe („Bewerbungen von gesamten Arbeiterpartien sind auch willkommen“). ALI: ovo je opšta sanacija i popravke u građevini (Hochbau i sanacija stanova), NIJE sanacija šteta od vode i požara — poklapanje sa Belfor profilom je delimično. Vredi zbog para i sigurnosti. Oglas za predradnika: willhaben.at/jobs/job/vorarbeiter-in-sanierungs-und-instandsetzungsarbeiten/13257818",
+      "Oglasi za sanaciju i popravke u Grazu (19,99 / 21,96 €/h) skinuti su pre roka. Iste satnice sada stoje samo za zidare u visokogradnji (Maurer/Betonbauer, Hochbau Steiermark — LB 26 012 Facharbeiter, LB 26 011 Vorarbeiter), a ti oglasi traže završen zanat zidara; mesto rada je Štajerska, ne izričito Graz. Velika firma, oko 1.200 zaposlenih. Ima smisla samo ako ima zidarsko iskustvo — onda pozvati Charlotte Leitgeber i pitati i za sanaciju. U prijavi OBAVEZNO navesti šifru oglasa.",
     vecKontaktirano: false,
   },
   {
     id: "trummer-kalsdorf",
     firma: "Trummer Sanierung GmbH",
-    pozicija: "Sušenje, sanacija buđi, sanacija stambenog prostora — videti Karriere",
+    pozicija: "Montaža (sušenje, sanacija buđi) — inicijativna prijava · otvoren oglas: Außendienst/Projektleiter, Kalsdorf/Graz",
     link: "https://trummer-sanierung.at/karriere",
     kontakt: "Alexandra i Rene Trummer — vlasnici (Geschäftsführung)",
     email: "zentrale@trummer.org",
@@ -182,8 +182,9 @@ const POSLOVI = [
     udaljenost: "~12 km",
     preporuka: 4,
     kununu: "https://www.kununu.com/at/search?q=Trummer+Sanierung",
+    kontaktAlt: "Prijave: bewerbung@trummer.org",
     provereno:
-      "14.10.2026 sa trummer-sanierung.at (karriere, impresum): poziv „Wir suchen laufend Verstärkung … auch ohne ausgeschriebene Stelle“ i dalje stoji; zentrale@trummer.org, 03135 20612 i Hauptstraße 305, Kalsdorf — tačno. NOVO: imena vlasnika (Geschäftsführung) — Alexandra Trummer i Rene Trummer.",
+      "13.11.2026 sa trummer-sanierung.at (karriere, impresum): NOVO — dva objavljena oglasa: Aussendienst/Projektleiter (puno radno vreme, Kalsdorf/Graz, traži tehničku školu ili dugogodišnje iskustvo u građevini i dobar nemački) i čistačica (15 h nedeljno). Poziv „Wir suchen laufend Verstärkung … auch ohne ausgeschriebene Stelle“ i Montage („Trocknung aufstellen, Schäden sanieren“) i dalje stoje. NOVO: prijave na bewerbung@trummer.org. Alexandra i Rene Trummer, zentrale@trummer.org, 03135 20612, Hauptstraße 305 — bez promena.",
     napomena:
       "Regionalna firma, dug staž u sušenju i sanaciji buđi. Nema objavljenih oglasa, ALI na Karriere stranici izričito pišu: „Wir suchen laufend Verstärkung — im Innendienst wie auf der Baustelle. Schreiben Sie uns, auch ohne ausgeschriebene Stelle.“ (tražimo stalno, pišite nam i bez oglasa). Primaju prijave za Montage („Trocknung aufstellen, Schäden sanieren“), Innendienst, Lager i Außendienst — Montage je njegovo. Manji tim, lakše da ga prime na razgovor nego u velikoj grupi.",
     vecKontaktirano: false,
@@ -202,7 +203,7 @@ const POSLOVI = [
     kununu: "https://www.kununu.com/at/search?q=LTS+Service",
     kontaktAlt: "Filijala Graz: stmk@lts-service.at · centrala Salzburg: office@lts-service.at · +43 6245 21950 (Urstein Nord 13, 5412 Puch) · prijava i preko lts-group.com/karriere/bewerbung-senden/",
     provereno:
-      "14.10.2026 sa lts-group.com (tim, lokacije, karijera): NOVO — šef filijale Graz ima ime: Dominik Degen, „Niederlassungsleiter Steiermark – Filiale Graz“, dominik.degen@lts-service.at, isti broj +43 670 608 64 61. Adresa Petersgasse 34 tačna. Na karijernoj stranici i dalje 7 pozicija (među njima Leckorter i Trocknungsmonteur), ali NIJEDNA ne navodi Graz ili Štajersku kao mesto rada.",
+      "13.11.2026 sa lts-group.com (karijera, tim, lokacije): bez promena — Dominik Degen („Niederlassungsleiter Steiermark – Filiale Graz“), dominik.degen@lts-service.at, +43 670 608 64 61, Petersgasse 34 i stmk@lts-service.at tačni. Na karijernoj stranici istih 7 pozicija (među njima Leckorter i Trocknungsmonteur), i dalje NIJEDNA ne navodi Graz ili Štajersku; LTS oglasa za Štajersku nema ni na willhaben-u ni na drugim portalima.",
     napomena:
       "Porodična firma, sanacija požara i vode + upravljanje nekretninama, filijale širom Austrije. Leckorter i Trocknungsmonteur su Belfor posao 1:1, ali oglasi ne kažu za koju filijalu — zato prvo pozvati Dominika Degena (šef filijale Graz) i pitati da li nekoga traže za Graz. Hitna linija 0800 66 55 67.",
     vecKontaktirano: false,
@@ -220,7 +221,7 @@ const POSLOVI = [
     preporuka: 3,
     kununu: "https://www.kununu.com/at/search?q=Brugger+Entfeuchtung",
     provereno:
-      "14.10.2026 sa brugger-entfeuchtung.at (impresum, kontakt): adresa, 0316 47 17 71 i office@brugger-entfeuchtung.at tačni. NOVO: vlasnica Margit Brugger, firma ima preko 25 zaposlenih, radno vreme pon–čet 8–17, pet 8–12. Na sajtu i dalje nema Jobs/Karriere stranice — inicijativna prijava je jedini put.",
+      "13.11.2026 sa brugger-entfeuchtung.at (impresum, kontakt): bez promena — Margit Brugger (Geschäftsführung), 0316 47 17 71, office@brugger-entfeuchtung.at, Liebenauer Hauptstraße 181, radno vreme pon–čet 8–17, pet 8–12. I dalje nema Jobs/Karriere stranice, a oglasa nema ni na willhaben-u.",
     napomena:
       "Nema oglasa — inicijativna prijava. Uska specijalnost (odvlaživanje + kanalizaciona tehnika) koja se direktno poklapa s Belfor iskustvom. Preko 25 zaposlenih. Najbolje pozvati u radno vreme (pon–čet 8–17, pet 8–12) pa poslati CV na mejl.",
     vecKontaktirano: false,
@@ -242,7 +243,7 @@ const POSLOVI = [
       "14.10.2026 sa derigo.at (jobs, tim, impresum): tri stara oglasa i dalje stoje, plus NOVI Fliesenleger:in (online od 09.10.2026, oko 2.260 € neto). Oglasi kažu „Ruf jetzt an! Kein Formular … ein kurzes Telefonat mit der Chefin Marion“ — 0676 847227 500. Impresum: direktorka Marion Khallaf-Derigo; na stranici tima kao Geschäftsführung stoji i Karim Khallaf (karim@derigo.at), pa raniji „ispravak“ tog imena nije bio sasvim tačan. U timu: „Todic Dragan — Sanierung Helfer“.",
     napomena:
       "Manja gradska firma, sanacija vode + vodoinstalacije i kupatila. Oglasi su pisani i na slovenačkom, uz napomenu da je dovoljno osnovno znanje nemačkog. U ekipi za sanaciju radi Dragan Todic — po imenu verovatno naš. Otvoreno: Bauhelfer (2.368,06 € bruto/mes., 38,5 h), Installateur (~2.300 € neto), Fliesenleger (~2.260 € neto) i Lehrstelle Bürokaufmann. Najbrže: pozvati direktorku Marion na 0676 847227 500. Radno vreme kancelarije: pon–čet 07:15–16:15, pet 07:15–11:45.",
-    vecKontaktirano: false,
+    status: "odbijen",
   },
   {
     id: "hsp-premstaetten",
@@ -258,7 +259,7 @@ const POSLOVI = [
     preporuka: 4,
     kununu: "https://www.kununu.com/at/search?q=HSP+Haustechnik",
     provereno:
-      "14.10.2026 sa hsp-haustechnik.at (oglasi, impresum): NOVO — direktor je Dragan Pejic („Geschäftsführung: Herr Dragan Pejic“). Mobilni +43 664 4311536 stoji u impresumu kao broj firme (ne piše čiji je). Ista 4 oglasa, stalna (od 2023): Gas-/Wasser-/Zentralheizungsmonteur u Grazu, Quereinsteiger/Montagehelfer, Monteure HKLS, Lehrlinge HKLS. Mejl i adresa tačni.",
+      "13.11.2026 sa hsp-haustechnik.at (oglasi, impresum): bez promena — „Geschäftsführung: Herr Dragan Pejic“, +43 664 4311536, office@hsp-haustechnik.at, Torpeterweg 22a. I dalje ista 4 oglasa (Gas-/Wasser-/Zentralheizungsmonteur u Grazu, Quereinsteiger/Montagehelfer, Monteure HKLS, Lehrlinge HKLS).",
     napomena:
       "Porodični zanatski pogon, 18 godina iskustva, hitna služba 24/7. DIREKTOR DRAGAN PEJIC — po imenu verovatno naš čovek, pa razgovor može na našem jeziku. Oglasi su HKLS (grejanje/vodovod/klima), ne sanacija šteta, ali „Quereinsteiger/Montagehelfer“ izričito prima ljude iz drugih branši („Egal, was du vorher gemacht hast“) — plata po KV-u uz Überzahlung. Zvati na +43 664 4311536 i tražiti Pejića.",
     vecKontaktirano: false,
@@ -276,7 +277,7 @@ const POSLOVI = [
     preporuka: 3,
     kununu: "https://www.kununu.com/at/search?q=ETB+Bauer",
     provereno:
-      "14.10.2026 sa etb-bauer.at/kontakt i impresuma — bez promena: office@etb-bauer.at, Bernhard Bauer +43 664 4607371, Harald Bauer +43 664 2823190, Mooskirchnerstraße 21, 8561 Söding-Sankt Johann, radno vreme pon–čet 07:00–16:00, pet 07:00–13:00. Obojica su vlasnici (Geschäftsführung). I dalje nema stranice sa oglasima.",
+      "13.11.2026 sa etb-bauer.at/kontakt i impresuma — bez promena: office@etb-bauer.at, Bernhard Bauer +43 664 4607371, Harald Bauer +43 664 2823190, Mooskirchnerstraße 21, 8561 Söding-Sankt Johann, radno vreme pon–čet 07:00–16:00, pet 07:00–13:00; obojica u Geschäftsführung. I dalje nema stranice sa oglasima.",
     napomena:
       "Nema objavljenih oglasa — ali imamo direktne mobilne brojeve oba vlasnika, što je najbrži put. Mala firma, sve ide preko telefona. Zvati pon–čet 07–16, pet 07–13.",
     vecKontaktirano: false,
@@ -295,7 +296,7 @@ const POSLOVI = [
     preporuka: 3,
     kununu: "https://www.kununu.com/at/search?q=Lederer-Grabner",
     provereno:
-      "14.10.2026 sa ledererbau.com: mejl, telefon, adresa (Puchstraße 162) i radno vreme (pon–čet 07:00–16:30, pet 07:00–12:00) tačni. Na Karriere stranici i dalje samo opšti formular („Wir suchen die Besten“), bez pojedinačnih oglasa. NOVO: na stranici firme stoji spisak šefova gradilišta sa direktnim brojevima (oko 270 zaposlenih) — ne piše ko vodi sanaciju šteta.",
+      "13.11.2026 sa ledererbau.com (karijera, kontakt): bez promena — office@ledererbau.com, +43 316 47 25 81, Puchstraße 162, radno vreme pon–čet 07:00–16:30, pet 07:00–12:00; Martin Felber i Franz Karl Niederl (Gruppenleiter mit Prokura) sa istim brojevima. Na Karriere stranici i dalje samo opšti formular („Wir suchen die Besten“), bez pojedinačnih oglasa.",
     napomena:
       "Građevinska firma koja radi i sanaciju šteta od buđi, požara i vode (Schimmel-, Brand- i Wasserschadensanierung). Nema objavljenih oglasa, ide se preko formulara na Karriere stranici ili direktno na office@ledererbau.com — ili pozvati jednog od dvojice šefova grupa (gore) i pitati ko vodi sanaciju šteta. Stabilan poslodavac u Grazu. Među šefovima gradilišta nema imena sa naših prostora.",
     vecKontaktirano: false,
@@ -316,7 +317,7 @@ const POSLOVI = [
     preporuka: 4,
     kununu: "https://www.kununu.com/at/search?q=ETS+Egger",
     provereno:
-      "14.10.2026 sa willhaben-a i StepStone-a: oglas ponovo objavljen 12.10.2026 i aktivan — „Unser Team in Graz braucht Verstärkung“, „Bruttomindestlohn € 3.065,- + Zulagen“, prijava kod „Herrn Aron Rada, Gmeinstraße 19, 8055 Graz, aron.rada@ets.at, Tel.: 0664/60435250“. Na sajtu firme (ets-gruppe.com/at/jobs) za Graz stoje Bodenleger i Tischler; oglasi za Entfeuchtungstechniker i Leckortungstechniker postoje samo za druge filijale (Zeltweg, Irdning…).",
+      "13.11.2026 sa willhaben-a i ets-gruppe.com: oglas osvežen 09.11.2026 i aktivan, tekst isti — „Unser Team in Graz braucht Verstärkung“, „Bruttomindestlohn € 3.065,- + Zulagen“, prijava kod „Herrn Aron Rada, Gmeinstraße 19, 8055 Graz, aron.rada@ets.at, Tel.: 0664/60435250“. Na sajtu firme za Graz i dalje samo Bodenleger i Tischler; Entfeuchtungstechniker (Zeltweg, Kirchbichl, Karres) i Leckortungstechniker (Irdning, Marchtrenk/Wels, Karres) i dalje samo u drugim filijalama.",
     napomena:
       "NOVA FIRMA, profil 1:1 kao Belfor: sušenje i sanacija posle vode, požara i buđi, traženje curenja (Lecksuche, Leitungsortung) — oko 350 zaposlenih na 15 lokacija. Oglas je za podopolagača, ali među zadacima je i pomoć pri sanaciji šteta od požara, vode i buđi i pri sušenju, a u platnoj tabeli su i pomoćnik i Hilfsarbeiter (od 2.427 €). Pozvati Arona Radu i pitati da li u Grazu traže nekoga za sušenje/sanaciju — za to već imaju oglase u drugim filijalama.",
     vecKontaktirano: false,
@@ -326,17 +327,18 @@ const POSLOVI = [
     firma: "Ing. Majcen Baugesellschaft m.b.H.",
     pozicija: "Sanierungsfachkraft / Allroundler — odvlaživanje i sanacija (KV za majstora 3.185,60 € bruto)",
     link: "https://www.majcen-bau.at/2024/06/21/sanierungsfachkraft-allroundler-m-w-d/",
-    kontakt: "Kancelarija (ime nije objavljeno)",
+    kontakt: "Daniel Passeil — odvlaživanje i sanacija (Entfeuchtung & Sanierung)",
     email: "office@majcen-bau.at",
     telefon: "+43 316 40 99 800",
     adresa: "Brunnenfeldstraße 25-27, 8055 Seiersberg-Pirka",
     udaljenost: "~6 km",
     preporuka: 4,
     kununu: "https://www.kununu.com/at/search?q=Majcen",
+    kontaktAlt: "Passeil: +43 664 84 55 279 · entfeuchtung@majcen-bau.at — direktor: Ing. Harald Majcen · +43 664 84 65 901 · majcen@majcen-bau.at",
     provereno:
-      "14.10.2026 sa majcen-bau.at: oglas „Sanierungsfachkraft / Allroundler“ i dalje stoji na sajtu i na Indeed-u, ali je iz juna 2024 — možda je već popunjen. Plata: „Bruttomonatslohn (Facharbeiter) lt. KV für Facharbeiter € 3.185,60“ uz spremnost na Überzahlung. Usluge firme: „Entfeuchtung & Sanierung“, „Leck-, Leitungsortung & Infrarotthermografie“.",
+      "13.11.2026 sa majcen-bau.at (oglas, Jobs, Team Graz, kontakt): oglas „Sanierungsfachkraft / Allroundler“ i dalje stoji (i dalje iz juna 2024), plata ista — „lt. KV für Facharbeiter € 3.185,60“. NOVO: u timu Graz postoji čovek baš za odvlaživanje — Daniel Passeil, „Entfeuchtung & Sanierung“, +43 664 84 55 279, entfeuchtung@majcen-bau.at; direktor je Ing. Harald Majcen. Adresa u samom oglasu (Mitterstraße 121) je stara — važi Brunnenfeldstraße 25–27. Na sajtu stoje i stari oglasi za Fliesenleger/in i Maler/in u Grazu (iz 2022). Među imenima u timu Graz nema naših.",
     napomena:
-      "NOVA FIRMA odmah kraj Graza, profil skoro 1:1: odvlaživanje, sanacija, traženje curenja. Oglas traži iskustvo u sanaciji (suvi zid, malter, pločice, hidroizolacija, podovi, molerski radovi) i spremnost da se nauči odvlaživanje — to on već zna. Oglas je star (jun 2024), zato prvo pozvati i pitati da li još traže; ako ne — inicijativna prijava.",
+      "NOVA FIRMA odmah kraj Graza, profil skoro 1:1: odvlaživanje, sanacija, traženje curenja. Oglas traži iskustvo u sanaciji (suvi zid, malter, pločice, hidroizolacija, podovi, molerski radovi) i spremnost da se nauči odvlaživanje — to on već zna. Oglas je star (jun 2024), zato prvo pozvati Daniela Passeila (odvlaživanje, +43 664 84 55 279) i pitati da li još traže; ako ne — inicijativna prijava.",
     vecKontaktirano: false,
   },
   {
@@ -352,7 +354,7 @@ const POSLOVI = [
     preporuka: 3,
     kununu: "https://www.kununu.com/at/search?q=Adecco",
     provereno:
-      "14.10.2026 sa willhaben-a: četiri aktivna oglasa od 09.–12.10.2026, „Einsatzort Graz“, svi sa istim kontaktom: „Ivan Blazevic, T +435991180013, M ivan.blazevic@contact.adecco.at“ (kod oglasa za Installateur-a broj je +435991180000). Satnice: Bodenleger i Trockenbau od 15,45 €/h, Fliesenleger od 15,30 €/h, Installateur od 15,40 €/h.",
+      "13.11.2026 sa willhaben-a: sva četiri oglasa i dalje aktivna, ponovo objavljena 06.–09.11.2026, „Einsatzort Graz“, isti kontakt „Ivan Blazevic, T +435991180013, M ivan.blazevic@contact.adecco.at“ (kod Installateur-a i dalje +435991180000). Satnice iste: Bodenleger i Trockenbau od 15,45 €/h, Fliesenleger od 15,30 €/h, Installateur od 15,40 €/h. I dalje važi: prijave poslate mejlom se ne razmatraju.",
     napomena:
       "Agencija (Leiharbeit), ne direktan poslodavac — plata je niža nego kod firmi gore. Ali Ivan Blazevic je po imenu verovatno naš i radi baš zanatske poslove u Grazu: pozvati ga, reći da ima Belfor iskustvo (sušenje, voda, požar) i pitati da li ima klijenta za sanaciju šteta. VAŽNO: Adecco ne uzima u obzir prijave poslate mejlom — prvo telefon, pa prijava preko dugmeta „Direkt bewerben“ u oglasu.",
     vecKontaktirano: false,
@@ -360,18 +362,18 @@ const POSLOVI = [
   {
     id: "synergie-graz",
     firma: "Synergie Personal (agencija) — za neimenovanu firmu za sanaciju šteta u Grazu",
-    pozicija: "Allround-Handwerker — podovi, pločice i ostalo, kod firme za sanaciju šteta (min. 3.157,87 € bruto)",
-    link: "https://www.willhaben.at/jobs/job/allround-handwerker-w-w-d-boden-fliesen-mehr/13268403",
+    pozicija: "Allround-Handwerker · Tischler/Bodenleger — podovi, pločice, kod firme za sanaciju šteta u Grazu (min. 3.157,87 € bruto)",
+    link: "https://www.synergiejobs.at/aktuelle-stellen/fliesenleger-m-w-d-63796/",
     kontakt: "Kancelarija Graz (ime nije objavljeno)",
     email: "office.graz@synergiejobs.at",
     adresa: "Otto-Baumgartner-Straße 4/Top 3a, 8055 Seiersberg",
     udaljenost: "Graz",
-    preporuka: 3,
+    preporuka: 2,
     kununu: "https://www.kununu.com/at/search?q=Synergie+Personal",
     provereno:
-      "14.10.2026 sa willhaben-a: oglas aktivan (prvi put 16.09., ponovo objavljen 14.10.2026). „Als ein International führendes Unternehmen in der Schadensanierung ist unser Kunde spezialisiert auf die professionelle Wiederherstellung von Immobilien und Infrastruktur nach Brand-, Wasser- und Sturmschäden“, „am Standort in Graz“, „Das gesetzliche Mindestentgelt beträgt € 3.157,87 brutto / Monat“. Ime klijenta nije navedeno.",
+      "13.11.2026 sa willhaben-a i synergiejobs.at: oglas na willhaben-u je ISTEKAO, ali isti oglas „Allround-Handwerker (w/w/d) Boden, Fliesen & Mehr“ i dalje stoji na sajtu agencije (objavljen 18.08.2026), plata ista: „Das gesetzliche Mindestentgelt beträgt € 3.157,87 brutto / Monat“. NOVO: za istog klijenta („International führendes Unternehmen in der Schadensanierung … Graz“) agencija od 09.11.2026 traži i Tischler / Bodenleger (3.157,87 €), a stoji i BodenlegerIn (3.062,86 €, od 26.02.2026). Ime klijenta i dalje nije navedeno — po tekstu oglasa vrlo verovatno BELFOR, nije potvrđeno. Adresa kancelarije Graz nije ponovo proverena.",
     napomena:
-      "Posao je 1:1 (sanacija posle požara, vode i oluje), a plata dobra — ALI agencija ne kaže ko je klijent. „Međunarodno vodeća firma za sanaciju, sa lokacijom u Grazu“ je najverovatnije BELFOR (njegov bivši poslodavac), možda Polygon. Prvo pitati Synergie ko je klijent, pa odlučiti. Oglas nudi i „Option zur Übernahme“ — kasniji prelazak direktno u firmu.",
+      "Posao je 1:1 (sanacija posle požara, vode i oluje), plata dobra — ALI agencija ne kaže ko je klijent. VRLO VEROVATNO JE BELFOR (njegov bivši poslodavac): zadaci u Synergie oglasu za Tischler/Bodenleger skoro doslovno odgovaraju BELFOR-ovom oglasu za Bodenleger („Möbel De- und Remontagen … Selbstständige Durchführung der Arbeiten“), BELFOR sebe naziva „weltweite Nr. 1 bei der Schadensanierung“, ima filijalu u Grazu i baš sada (07.11.2026) traži Allroundmonteur-a za Graz. Polygon-ova „Graz“ filijala je zapravo u Frohnleiten-u. PRE PRIJAVE obavezno pitati Synergie ko je klijent — ako je BELFOR, ne prijavljivati se. Oglas nudi i „Option zur Übernahme“. Za istog klijenta agencija traži i Tischler/Bodenleger (od 09.11.2026) i BodenlegerIn (3.062,86 €).",
     vecKontaktirano: false,
   },
   {
@@ -388,7 +390,7 @@ const POSLOVI = [
     preporuka: 5,
     kununu: "https://www.kununu.com/at/search?q=der+entfeuchter",
     provereno:
-      "14.10.2026 sa entfeuchter.com (oglasi, tim, impresum): otvoreno „Entfeuchtungstechniker (M/W/D) auf Vollzeitbasis“ — traže „Berufserfahrung im Baunebengewerbe“ i vozačku B, nude „Hauseigene Ausbildung zum Entfeuchtungstechniker“ i službeno vozilo, plata „Bereitschaft zu Überzahlung“ bez cifre. Otvoreno i „Sanierungsfachkraft“ (iskustvo kao podopolagač ili keramičar). Datum objave nije naveden. Sajt ima nepotpun TLS sertifikat — pretraživač može da pokaže upozorenje; stranica se otvori kad se ono prihvati.",
+      "13.11.2026 sa entfeuchter.com (oglasi, tim, impresum) i evi.gv.at: i dalje otvoreno „Entfeuchtungstechniker (M/W/D) auf Vollzeitbasis“ (iskustvo „im Baunebengewerbe“, vozačka B, „Hauseigene Ausbildung zum Entfeuchtungstechniker“, službeno vozilo, „Bereitschaft zu Überzahlung“ bez cifre) i „Sanierungsfachkraft“ (podopolagač ili keramičar). Po podacima sajta oba oglasa stoje od 2023. (11.10.2023 i 18.07.2023) — stalni oglasi, ne nova mesta. Na stranici tima i dalje 16 ljudi; direktori Paul i Michael Pagitsch po registru. Sertifikat sajta je istekao 05.11.2026 — pretraživač pokazuje upozorenje; stranica se otvori kad se ono prihvati.",
     napomena:
       "NOVA FIRMA, profil 1:1: traženje curenja, odvlaživanje/sušenje, sanacija posle vode, buđ — hitna služba 0–24. Postoji od 1990, na stranici tima 16 ljudi (od toga 4 tehničara za curenje). Oglas za Entfeuchtungstechniker-a je tačno njegov posao, a obuku daju sami. Radno vreme pon–čet 07:30–16:30, pet 07:30–12:00. U Lieboch-u je i Profi MAX — dve firme za sušenje na par minuta jedna od druge. Nema imena sa naših prostora.",
     vecKontaktirano: false,
@@ -398,7 +400,7 @@ const POSLOVI = [
     firma: "Trockenmax Entfeuchtung u. Sanierungs GmbH",
     pozicija: "Sušenje, traženje curenja, buđ, unutrašnja sanacija — bez oglasa, inicijativna prijava",
     link: null,
-    kontakt: "Christian Thomann — direktor (Geschäftsführung)",
+    kontakt: "Christian Thomann — direktor (Geschäftsführung, potvrđeno u registru)",
     kontaktAlt: "Sa arhiviranog sajta (sept. 2025, proveriti): Christian Thomann 0664 8368557 · tho@trockenmax.at — šef odeljenja Hansjürgen Daum +43 664 96 65 662 · daum@trockenmax.at",
     email: "office@trockenmax.at",
     telefon: "+43 316 418989",
@@ -407,7 +409,7 @@ const POSLOVI = [
     preporuka: 4,
     kununu: "https://www.kununu.com/at/search?q=Trockenmax",
     provereno:
-      "14.10.2026: sajt trockenmax.at trenutno pokazuje samo zaštitu od botova, pa su pročitani arhivirani sajt (08.09.2025) i imenici. office@trockenmax.at i +43 316 418989 potvrđuju Herold i firmenabc. Na arhiviranoj stranici „Über uns“: „32 Mitarbeiter & Mitarbeiterinnen, 28 Fahrzeuge“. Imena iz tima (Thomann, Daum) su sa arhivirane stranice i nisu potvrđena na živom sajtu. Oglasa nema ni na sajtu ni na portalima.",
+      "13.11.2026: sajt trockenmax.at i dalje pokazuje samo zaštitu od botova (403). Po javnom registru (evi.gv.at) direktor je Christian Thomann (od 2011), bez insolventnosti. Herold (podaci od 24.10.2026) potvrđuje office@trockenmax.at, +43 316 418989 i adresu; tamo piše 11–20 zaposlenih (arhivirani sajt je navodio 32). Ime Daum i mobilni brojevi su i dalje samo sa arhiviranog sajta. Oglasa nema ni na portalima.",
     napomena:
       "NOVA FIRMA, profil 1:1 osim požara: hitna služba posle vode, tehničko sušenje, traženje curenja bez razbijanja, buđ, pa kompletna unutrašnja sanacija (imaju svoje zidare, keramičare, stolare, molere i podopolagače). Oko 30 zaposlenih, 10 km od Graza. Oglasa nema — pozvati kancelariju (pon–čet 07:30–16:30, pet do 12:00), pitati za direktora Thomanna da li im treba tehničar za sušenje, pa poslati CV. Nema imena sa naših prostora.",
     vecKontaktirano: false,
@@ -426,7 +428,7 @@ const POSLOVI = [
     preporuka: 3,
     kununu: "https://www.kununu.com/at/search?q=eisb%C3%A4r",
     provereno:
-      "14.10.2026 sa eisbaer.com (kontakt, tim, oglasi): filijala Graz ima svoje odeljenje za štete od vode (ispitivanje pritiska, traženje curenja, sušenje, sanacija, obračun direktno sa osiguranjem) — office@eisbaer-graz.com, +43 316 24 35 35 (ujedno dežurna linija). Na stranici sa oglasima 6 mesta, nijedno u Grazu (Wels, Innsbruck, Wien). Inicijativne prijave primaju.",
+      "13.11.2026 sa eisbaer.com (kontakt, tim, oglasi): bez promena — odeljenje za štete od vode u Grazu, office@eisbaer-graz.com, +43 316 24 35 35; Yvonne Lindner (projektni vođa) i Christoph Szapacs (tehnički šef) i dalje na stranici tima. Na stranici sa oglasima 5 mesta i inicijativna prijava, nijedno u Grazu (Wels, Innsbruck, Wien).",
     napomena:
       "Grupa za klimatizaciju i odvlaživanje sa filijalama u Beču, Welsu, Innsbrucku i Grazu; u Grazu je odeljenje baš za štete od vode. Oglasa za Graz sada nema — pozvati, pitati Yvonne Lindner da li traže tehničara za sušenje, pa poslati inicijativnu prijavu. U filijali Graz nema imena sa naših prostora (ima ih u Beču i Welsu).",
     vecKontaktirano: false,
@@ -445,7 +447,7 @@ const POSLOVI = [
     preporuka: 3,
     kununu: "https://www.kununu.com/at/search?q=Goldgruber",
     provereno:
-      "14.10.2026 sa goldgruber.eu: na stranici sa poslovima nema konkretnih oglasa, ali piše „Wir suchen gute Mitarbeiter. Freiberufler und Selbständige willkommen, oder schicken Sie uns einfach Ihre Initiativbewerbung!“. Kontakt sa sajta: +43 3112 36 220-0, +43 664 42 100 08, office@goldgruber.eu. Vlasnik i direktor od 2010: Gottfried Goldgruber (javni registar).",
+      "13.11.2026 sa goldgruber.eu: bez promena — na stranici sa poslovima i dalje nema konkretnih oglasa, samo „Wir suchen gute Mitarbeiter … schicken Sie uns einfach Ihre Initiativbewerbung“. Kontakt isti: +43 3112 36 220-0, +43 664 42 100 08, office@goldgruber.eu. Na portalima nema oglasa.",
     napomena:
       "NOVA FIRMA: sušenje posle štete od vode (i estriha i izolacije), traženje curenja, buđ, neprijatni mirisi, iznajmljivanje sušača — bez požara. Srednja firma sa svojim tehničarima, Gleisdorf ~25 km istočno. Oglasa nema, ali izričito pozivaju na inicijativnu prijavu. Nema imena sa naših prostora.",
     vecKontaktirano: false,
@@ -460,12 +462,12 @@ const POSLOVI = [
     kontaktAlt: "Mejl-link na sajtu vodi na office@suedmann-trockenbau.at (oba domena primaju poštu)",
     email: "office@suedmann.at",
     telefon: "+43 676 5300275",
-    adresa: "Ebnerweg 29, 8434 Tillmitsch (kod Leibnitza)",
+    adresa: "Schubert-Straße 7, 8430 Leibnitz (po registru od 15.10.2026; sajt još navodi Ebnerweg 29, Tillmitsch)",
     udaljenost: "~33 km",
     preporuka: 3,
     kununu: "https://www.kununu.com/at/search?q=S%C3%BCdmann",
     provereno:
-      "14.10.2026: na suedmann.at stoji stranica „Entfeuchtung & Wasserschadensanierung“ (sušenje, sanacija i obnova oštećenih prostorija), plus suvi zid i renoviranje; kontakt +43 676 5300275, office@suedmann.at. Po javnom registru (evi.gv.at): direktor Matej Capin (od 03.05.2023), drugi direktor Hans Jürgen Resch (od 01.09.2025), prokuristkinja Ines Kesinovic. Oglasa nema.",
+      "13.11.2026 sa suedmann.at i evi.gv.at: sajt nepromenjen (sušenje i sanacija posle vode, suvi zid; +43 676 5300275, office@suedmann.at; na sajtu i dalje Ebnerweg 29, Tillmitsch). Po registru firma je 15.10.2026 preselila sedište na Schubert-Straße 7, 8430 Leibnitz. Direktori Matej Capin i Hans Jürgen Resch i prokuristkinja Ines Kesinovic bez promene, nema insolventnosti. Adresa bez „www“ (suedmann.at) vodi na stranicu koja se ne otvara — koristiti www.suedmann.at. Oglasa nema.",
     napomena:
       "Mala firma južno od Graza (Tillmitsch/Leibnitz, ~33 km — malo preko granice od 30 km). Radi odvlaživanje i sanaciju posle vode. Direktor Matej Capin i prokuristkinja Ines Kesinovic — po imenima verovatno govore naš jezik. Oglasa nema: pozvati, predstaviti se na našem i pitati da li im treba neko sa Belfor iskustvom.",
     vecKontaktirano: false,
@@ -484,7 +486,7 @@ const POSLOVI = [
     preporuka: 3,
     kununu: "https://www.kununu.com/at/search?q=Trosecc",
     provereno:
-      "14.10.2026 sa trosecc.at (tim, kontakt): vlasnik Dipl.-Ing. Helfried Rittner; „Dzevad Osmancevic — Teamleiter Servicetechnik“. Kontakt 0316 24 11 12, rittner@trosecc.at, pon–pet 08–17. Po Herold-u 6–10 zaposlenih. Oglasa i Karriere stranice nema.",
+      "13.11.2026 sa trosecc.at (tim, kontakt): bez promena — vlasnik Dipl.-Ing. Helfried Rittner; „Dzevad Osmancevic — Teamleiter Servicetechnik“. Kontakt 0316 24 11 12, rittner@trosecc.at, pon–pet 08–17. Oglasa i Karriere stranice nema.",
     napomena:
       "Mala firma blizu Graza: isušivanje zidova, horizontalne barijere protiv vlage, uklanjanje buđi, analiza objekta. Poklapanje delimično (nema sušenja posle akutnih šteta od vode), ali vlaga i buđ su njegov posao. Šef servisnog tima Dzevad Osmancevic — po imenu verovatno naš: pozvati kancelariju i tražiti njega.",
     vecKontaktirano: false,
@@ -504,7 +506,7 @@ const POSLOVI = [
     preporuka: 2,
     kununu: "https://www.kununu.com/at/search?q=Krajina+Bau",
     provereno:
-      "14.10.2026 sa krajina.at: „Stjepan Krajina — Geschäftsführer“, ks@krajina-bau.at, 0699 102 886 84, Packerstraße 281, 8501 Lieboch; „Ana Krajina — Administration“; na početnoj strani „40 + Mitarbeiter“, „Seit 2015“. Po WKO-u firma ima i slobodnu delatnost „Entfeuchtung“. Oglasa i Karriere stranice nema.",
+      "13.11.2026 sa krajina.at: bez promena — „Stjepan Krajina — Geschäftsführer“, ks@krajina-bau.at, 0699 102 886 84; „Ana Krajina — Administration“; office@krajina-bau.at, +43 676 37 72 090; „40+ Mitarbeiter“, „Seit 2015“. Oglasa i Karriere stranice nema.",
     napomena:
       "NIJE firma za sanaciju šteta — gradi kuće po fiksnoj ceni. Na listi je zbog jezika: vlasnik Stjepan Krajina i Ana Krajina su po imenima verovatno naši, firma ima 40+ zaposlenih i radi i u Hrvatskoj. Rezerva za posao na našem jeziku ako sanacija ne uspe — zvati direktno vlasnika.",
     vecKontaktirano: false,
@@ -523,9 +525,163 @@ const POSLOVI = [
     preporuka: 2,
     kununu: "https://www.kununu.com/at/search?q=Holzer+Installationen",
     provereno:
-      "14.10.2026 sa holzer-installationen.at: otvoreno „Helfer — ab € 2.000, 38,5 h“, bez potrebne škole, i Installateur od 2.900 € (traži završen zanat). Na stranici tima: Salem Salihovic (Techniker), Zlatan Gutic (Helfer), Kristijan Svajger (Installateur). Oko 13 ljudi.",
+      "13.11.2026 sa holzer-installationen.at: bez promena — otvoreno „Helfer — ab € 2.000, 38,5 h“, bez potrebne škole, i Installateur od 2.900 € (traži završen zanat). Na stranici tima i dalje Salem Salihovic (Techniker), Zlatan Gutic (Helfer), Kristijan Svajger (Installateur); ukupno 13 ljudi.",
     napomena:
       "Vodoinstalacije i grejanje, ne sanacija — ali kod pucanja cevi rade traženje curenja, otvaranje i popravku, pa iskustvo sa vodom pomaže. Na listi zbog jezika: u timu su trojica sa imenima sa naših prostora. Plata za pomoćnika je niska (od 2.000 €) — samo kao rezerva.",
+    vecKontaktirano: false,
+  },
+
+  // ── Novo 13.11.2026 ──
+  {
+    id: "bcc-graz",
+    firma: "Build & Connect Consulting GmbH (BCC)",
+    pozicija: "Sanierungs-Allrounder / Bau-Allrounder (m/w/d) — sanacija šteta, Graz i Štajerska (od 3.000 € bruto) — oglas ističe 23.11.2026",
+    link: "https://www.willhaben.at/jobs/job/sanierungs-allrounder-bau-allrounder-m-w-d/13284523",
+    kontakt: "BM DI Thomas Lechner — direktor (Geschäftsführer, Baumeister, veštak); kontakt iz oglasa",
+    kontaktNas: { ime: "Svetozar Delcev", uloga: "šef građevinskog nadzora (Leitung Örtliche Bauaufsicht) — ne vodi sanaciju", email: "delcev@b-cc.at", telefon: "+43 664 3443904" },
+    kontaktAlt: "Lechner: lechner@b-cc.at · mobilni na sajtu piše +43 699 10 12 98 13, a link na dugmetu je +43 699 1012913 — probati oba · šef sanacije: BM Fabian Krivitsch · krivitsch@b-cc.at · +43 664 5414292 · kancelarija: office@b-cc.at",
+    email: "lechner@b-cc.at",
+    telefon: "+43 316 302 731",
+    adresa: "Petrifelderstraße 109/EG, 8042 Graz",
+    udaljenost: "Graz",
+    preporuka: 4,
+    kununu: "https://www.kununu.com/at/search?q=Build+Connect+Consulting",
+    provereno:
+      "13.11.2026 sa willhaben-a i b-cc.at (početna, tim, impresum): oglas prvi put objavljen 24.10.2026, obnovljen 07.11.2026, važi do 23.11.2026 — „Standort: Graz & Steiermark | Vollzeit“, „Monatliches Bruttogehalt ab 3.000 € mit Bereitschaft zur Überzahlung“, „Eine abgeschlossene handwerkliche Ausbildung ist von Vorteil, aber nicht zwingend erforderlich“, „Gute Deutschkenntnisse für die Kommunikation auf der Baustelle“, vozačka B. Kontakt u oglasu: „BM DI Thomas Lechner, E-Mail: lechner@b-cc.at“. Sajt firme: „Schadensanierung & Trocknung durch Baumeister“ — „Leckortung, Bautrocknung, Schimmelsanierung, Versicherungsabrechnung“. Impresum: direktor Univ.-Lekt. BM Dipl.-Ing. Thomas Lechner, FN 643559k.",
+    napomena:
+      "NOVA FIRMA, profil skoro kao Belfor: traženje curenja, sušenje, buđ i sanacija posle štete, obračun direktno sa osiguranjem. Oglas je za „Sanierungsteam“: suvi zid i gletovanje, molerski radovi, manji podovi i pločice, fasada, i održavanje za upravnike zgrada. Traže samostalnog čoveka koji sam vodi manje gradilište i koordinira podizvođače — više od pomoćnika, ali tačno ono što je radio. Nemački samo „gut“ za gradilište, škola nije uslov. Mala, nova firma (direktor je inženjer i veštak). U timu je Ing. Svetozar Delcev (vodi nadzor na infrastrukturi) — po imenu verovatno naš; razgovor ipak voditi sa Lechnerom ili Krivitschem (šef sanacije). Kancelarija pon–čet 08–17, pet 08–12. OGLAS ISTIČE 23.11.2026 — javiti se odmah, prijava mejlom na lechner@b-cc.at.",
+    vecKontaktirano: false,
+  },
+  {
+    id: "kompetenz-premstaetten",
+    firma: "WB Kompetenz Entfeuchtung und Sanierung GmbH",
+    pozicija: "Sanierungsmitarbeiter · Maler · Bodenleger · Trockenbauer — „immer auf der Suche“, i Quereinsteiger",
+    link: "https://kompetenz-entfeuchtung.at/karriere/",
+    kontakt: "Wolfgang Baumann — vlasnik i direktor (tehnika i sanacija)",
+    kontaktAlt: "Anita Baumann — komercijalni deo, organizacija termina · drugi broj firme: +43 664 88 109 264 (stoji u impresumu) · Baumann direktno: baumann@kompetenz-entfeuchtung.at (WKO imenik)",
+    email: "office@kompetenz-entfeuchtung.at",
+    telefon: "0664 28 47 803",
+    adresa: "Jochen-Rindt-Weg 21, 8141 Premstätten",
+    udaljenost: "~12 km",
+    preporuka: 4,
+    kununu: "https://www.kununu.com/at/search?q=Kompetenz+Entfeuchtung",
+    provereno:
+      "13.11.2026 sa kompetenz-entfeuchtung.at (karijera, „Unternehmen“, impresum) i evi.gv.at: na stranici Karriere piše „Wir sind immer auf der Suche nach zuverlässigen und engagierten Mitarbeitern (m/w/d), insbesondere Maler, Bodenleger und Trockenbauer … Ob mit Erfahrung in Sanierung, Trocknung oder Handwerk oder als motivierter Quereinsteiger“, a u formularu za prijavu postoji i „Sanierungsmitarbeiter/in“. Usluge: Leckortung, „Technische Trocknung“, buđ, sanacija, hitna služba 24/7. Firma je upisana u Firmenbuch 13.10.2026 (FN 688025b), jedini vlasnik i direktor je Wolfgang Baumann. Ranije je radila kao „Wolfgang Baumann e.U. Wasserschadensanierung“ (WKO). Radno vreme pon–čet 07:00–17:00.",
+    napomena:
+      "NOVA FIRMA, profil 1:1: tehničko sušenje, sanacija posle vode, buđ. Traženje curenja rade preko partnerskih firmi. Na karijernoj stranici izričito traže ljude za sanaciju, podove, suvi zid i molerske radove, a primaju i ljude iz drugih zanata — to je tačno njegovo Belfor iskustvo. Firma je mala i porodična (na stranici tima su samo Wolfgang i Anita Baumann), ali kaže da raste. Imena sa naših prostora nema. Najbolje pozvati Baumanna direktno pa poslati CV na office@. Prijava ide i preko formulara na sajtu.",
+    vecKontaktirano: false,
+  },
+  {
+    id: "ifm-graz",
+    firma: "IFM Immobilien Facility Management und Development GmbH (filijala Graz)",
+    pozicija: "Sanacija posle požara i vode — u Grazu više puta tražili Allrounder/Techniker (od 3.200 €), sada bez oglasa za Graz",
+    link: "https://ifm.team/karriere/",
+    kontakt: "Filijala Graz (ime šefa nije objavljeno); direktori Ing. Michael Moshammer i DI (FH) Guido Pfeifer (Beč)",
+    kontaktAlt: "Prijave: bewerbung@ifm.team · centrala Beč: Lehnergasse 3, 1150 Wien, +43 1 534 99-0",
+    email: "office@ifm.team",
+    telefon: "+43 316 908 900 0",
+    adresa: "Wielandgasse 2, 8010 Graz",
+    udaljenost: "Graz",
+    preporuka: 4,
+    kununu: "https://www.kununu.com/at/search?q=IFM+Immobilien+Facility+Management",
+    provereno:
+      "13.11.2026 sa ifm.team (sanacija, kontakt, karijera) i karriere.at: filijala Graz je u Wielandgasse 2, tel. +43 316 908 900 0. Firma ima odeljenje „Sanierung von Brand-, Wasser- und Sturmschäden“. Na karriere.at, među isteklim oglasima za Graz, stoje „Allrounder (m/w) Brand- und Wasserschadensanierung“ (11.1.2026, „ab 3.200 € monatlich“) i „Techniker (m/w) für Brand- und Wasserschadensanierung“ (13.9.2024, od 2.800 €). Sada su na sajtu otvorena samo 4 mesta, u Beču i Linzu (među njima „Projektleiter Wasserschadensanierung“ u Beču). Na karijernoj stranici piše „Bewerben Sie sich … auch gerne initiativ. Jede Bewerbung wird … beantwortet.“",
+    napomena:
+      "NOVA FIRMA: velika firma za upravljanje zgradama sa 6 filijala, a sanacija šteta od vode i požara joj je jedna od glavnih usluga. Za Graz su već dva puta tražili baš njegov profil (Allrounder/Techniker za sanaciju, od 3.200 €). Nudi 6 nedelja godišnjeg odmora, službeni auto i mobilni. Sada oglasa za Graz nema: pozvati filijalu u Grazu, pitati ko vodi sanaciju i da li ponovo traže Allroundera, pa poslati inicijativnu prijavu na bewerbung@ifm.team. Na sajtu se kao radnik na sanaciji pojavljuje „Mujacic M., seit 2020“ (filijala nije navedena), a u penziju je otišao Nenad Radojevic — u firmi dakle ima naših ljudi.",
+    vecKontaktirano: false,
+  },
+  {
+    id: "leckorter-graz",
+    firma: "Die Leckorter Fötsch Ortungstechnik GmbH",
+    pozicija: "Traženje curenja (Messtechniker) — inicijativna prijava za Graz; sada traže 2 tehničara u Donjoj Austriji",
+    link: "https://leckorter.com/karriere/",
+    kontakt: "Kancelarija; direktori Hans Peter Fötsch i Jasmin Schomburg",
+    kontaktAlt: "Hitna linija: +43 676 842529700 · WhatsApp: +43 676 842529702 · centrala: Hadernigg 27, 8552 Eibiswald",
+    email: "office@leckorter.com",
+    telefon: "+43 3466 93082",
+    adresa: "Alte Poststraße 269, 8053 Graz",
+    udaljenost: "Graz",
+    preporuka: 3,
+    kununu: "https://www.kununu.com/at/search?q=Die+Leckorter",
+    provereno:
+      "13.11.2026 sa leckorter.com (karijera, „Über uns“, impresum) i evi.gv.at: lokacija Graz je Alte Poststraße 269, 8053 Graz (Herold navodi staru adresu Brückenkopfgasse 1). Na karijernoj stranici piše „Du bist gelernter Installateur, willst mit anpacken …“ i „WIR SUCHEN AKTUELL 2 MESSTECHNIKER IM RAUM NIEDERÖSTERREICH“, a za Graz konkretnog oglasa nema. O svom poslu kažu: „Wir legen die Schadstelle frei, setzen Notabdichtungen …“. Firmenbuch FN 600456z: direktori Hans Peter Fötsch i Jasmin Schomburg, vlasnik je od 11.08.2026 FS Partners GmbH.",
+    napomena:
+      "NOVA FIRMA, specijalizovana samo za traženje curenja: termografija, tracer gas, akustika, endoskopija. Posle toga otvaraju mesto curenja i privremeno ga zatvaraju. Rade po celoj Austriji, a u Štajerskoj imaju lokacije u Eibiswald-u, Grazu i Leobenu. Nema sušenja ni sanacije, ali Leckortung iz Belfora mu je ovde direktna prednost. Uslov je zanat instalatera („gelernter Installateur“), pa prvo pozvati i pitati da li za Graz primaju i nekoga sa iskustvom u Leckortung-u bez instalaterskog ispita. U Leobenu radi partnerska firma „Alen Ilic Ortungstechnik“ — po imenu verovatno naš čovek, ali to je ~60 km od Graza.",
+    vecKontaktirano: false,
+  },
+  {
+    id: "lecksuche-kirchbach",
+    firma: "WLS lecksuche.at GmbH",
+    pozicija: "Leckortungstechniker (m/w/d) — Štajerska, Koruška, Salcburg, Donja Austrija (KV + „deutliche Überbezahlung“)",
+    link: "https://www.lecksuche.at/jobs",
+    kontakt: "Martin Wagner — direktor (Geschäftsführer), prijave idu njemu",
+    kontaktAlt: "Kancelarija: office@lecksuche.at · 0664 1233413 · isti direktor vodi i Dampfhofer Installations GmbH u Grazu (Peter-Rosegger-Straße 125, +43 316 28 69 20)",
+    email: "martin.wagner@lecksuche.at",
+    telefon: "0664 1267502",
+    adresa: "Kirchbach 262, 8082 Kirchbach-Zerlach",
+    udaljenost: "~30 km",
+    preporuka: 2,
+    kununu: "https://www.kununu.com/at/search?q=lecksuche.at",
+    provereno:
+      "13.11.2026 sa lecksuche.at (oglas, tim, impresum) i evi.gv.at: otvoren oglas „Leckortungstechniker (m/w/d) — Für den Raum Kärnten, Steiermark, Salzburg und Niederösterreich“. Traže „ausgebildeter Leckortungstechniker (von Vorteil) oder GWH Installateur mit LAP“, „ausgezeichnetes Deutsch in Wort und Schrift“ i vozačku B najmanje 3 godine. Nude službeno vozilo i „Kollektivvertragliche Entlohnung mit Bereitschaft zur deutlichen Überbezahlung“. Prijava: „martin.wagner@lecksuche.at … oder telefonisch unter 0664 - 1267502“. Na stranici tima je 5 tehničara za Štajersku. Firmenbuch FN 550780x: direktor Martin Wagner, prokuristkinja Melanie Wagner. PAŽNJA: po podacima stranice oglas je objavljen još 13.01.2026 — možda je već popunjen.",
+    napomena:
+      "NOVA FIRMA, takođe samo traženje curenja (voda, grejanje, kanalizacija, ravni krovovi). Radi za osiguranja, instalatere i firme za sanaciju. Oglas pokriva Štajersku, a Leckortung je njegov posao. PREPREKA: traže „odličan nemački“ i obuku za Leckortung ili instalaterski ispit. Zvati Wagnera direktno i pomenuti Belfor iskustvo sa traženjem curenja. Isti čovek je direktor i instalaterske firme Dampfhofer u Grazu, pa je moguće da se radi iz Graza. Nema imena sa naših prostora u Štajerskoj (u Beču ima).",
+    vecKontaktirano: false,
+  },
+  {
+    id: "ha-sanierung-gleisdorf",
+    firma: "H & A Sanierungsgesellschaft mbH & Co KG",
+    pozicija: "Sanacija posle vode, traženje curenja, isušivanje, buđ, kanal i cevi — bez oglasa, inicijativna prijava",
+    link: null,
+    kontakt: "Andreas Huber / Andreas Almer — vlasnici i direktori",
+    kontaktAlt: "Treći direktor i suvlasnik od 03.03.2026: Christian Fuchs",
+    email: "office@ha-sanierung.at",
+    telefon: "+43 664 882 291 85",
+    adresa: "Ludersdorf 123, 8200 Ludersdorf-Wilfersdorf (kod Gleisdorfa)",
+    udaljenost: "~22 km",
+    preporuka: 3,
+    kununu: "https://www.kununu.com/at/search?q=H+%26+A+Sanierungsgesellschaft",
+    provereno:
+      "13.11.2026 sa ha-sanierung.at (početna, sanacija posle vode, impresum, kontakt) i evi.gv.at: „Trockenlegung, Sanierung von Kanal- und Rohrleitungen sowie Wasserschäden, Leckortung aller Art, Schimmelbekämpfung“ u celoj Štajerskoj. Kod šteta od vode rade i podove, pločice, molerske radove i unutrašnje uređenje. Firma postoji od 2018. Firmenbuch FN 487559z: direktori Andreas Huber, Andreas Almer i (od 03.03.2026) Christian Fuchs. Radno vreme pon–čet 07:30–16:00, pet 07:30–13:00. Stranice sa oglasima nema.",
+    napomena:
+      "NOVA FIRMA, profil skoro 1:1 (bez požara): sanacija posle vode sa traženjem curenja i završnim radovima (podovi, pločice, molerski radovi) i obračunom sa osiguranjem. Plus isušivanje zidova, buđ i sanacija cevi. Broj zaposlenih nije objavljen. Oglasa nema: pozvati u radno vreme i pitati da li im treba radnik za sušenje i sanaciju. Nema imena sa naših prostora. U Gleisdorf-u je i Goldgruber — dve firme blizu jedna druge.",
+    vecKontaktirano: false,
+  },
+  {
+    id: "trockenprofi-vasoldsberg",
+    firma: "Trockenprofi KG",
+    pozicija: "Sanacija posle vode, sušenje objekata — bez oglasa, inicijativna prijava",
+    link: null,
+    kontakt: "Manfred Thurner — vlasnik sa punom odgovornošću (Komplementär)",
+    email: "office@trockenprofi.at",
+    telefon: "+43 664 3950181",
+    adresa: "Pirolgasse 14, 8076 Vasoldsberg",
+    udaljenost: "~12 km",
+    preporuka: 3,
+    kununu: "https://www.kununu.com/at/search?q=Trockenprofi",
+    provereno:
+      "13.11.2026 sa trockenprofi.at (početna, usluge, kontakt) i evi.gv.at: „Familienunternehmen mit Sitz in Vasoldsberg bei Graz. Unser Team besteht aus erfahrenen Experten, die jahrelang in der Trocknungsbranche tätig sind.“ Usluge: „Wasserschadensanierung, Gebäudetrocknung, Bauwerktrocknung, Spezialtrocknungen“. Kancelarija pon–pet 07:30–17:30. Firmenbuch FN 574004z, upisana 05.02.2022, delatnost „Entfeuchtung“. Komplementär je Manfred Thurner. Oglasa i Karriere stranice nema.",
+    napomena:
+      "NOVA FIRMA, uska specijalnost: sušenje posle vode, kao Belfor tehničko sušenje. Mala porodična firma (pet ortaka, osnovana 2022.), 12 km jugoistočno od Graza. Sajt je vrlo skroman i broj zaposlenih nije poznat. Oglasa nema: pozvati mobilni, pitati Thurnera da li im treba tehničar za sušenje, pa poslati CV. Nema imena sa naših prostora.",
+    vecKontaktirano: false,
+  },
+  {
+    id: "zodjak-graz",
+    firma: "Zodjak GmbH (Zodjak Bau)",
+    pozicija: "Sanacija stanova i kuća, suvi zid, sanacija buđi, sušenje posle vode — bez oglasa",
+    link: null,
+    kontakt: "Zoran Djakovic — vlasnik i direktor",
+    kontaktNas: { ime: "Zoran Djakovic", uloga: "vlasnik i direktor", email: "info@zodjakbau.at", telefon: "+43 664 5221318" },
+    email: "info@zodjakbau.at",
+    telefon: "+43 664 5221318",
+    adresa: "Neudorfer Straße 20c, 8041 Graz",
+    udaljenost: "Graz",
+    preporuka: 3,
+    kununu: "https://www.kununu.com/at/search?q=Zodjak",
+    provereno:
+      "13.11.2026 sa zodjakbau.at (početna, „Über uns“, sanacija buđi, kontakt, impresum) i evi.gv.at: „Ihre Sanierungsfirma in Graz … Seit über 15 Jahren in Graz und Graz-Umgebung“. Usluge: kompletna sanacija, stari objekti, stanovi, kupatila, suvi zid, pločice i „Schimmelsanierung: Ursachenanalyse, Trockenlegung und Sanierung aus einer Hand“. Na sajtu je i tekst „Wasserschaden in Graz: Sofortmaßnahmen und Bautrocknung“. Firmenbuch FN 401505z, od 2013, jedini vlasnik i direktor Zoran Djakovic. Oglasa i Karriere stranice nema.",
+    napomena:
+      "NIJE čista firma za sanaciju šteta — to je firma za renoviranje, ali radi suvi zid, buđ i sanaciju posle vode, a on ima iskustvo sa rušenjem, suvim zidom i podovima. Na listi je zbog jezika: vlasnik ZORAN DJAKOVIC je po imenu verovatno naš čovek, pa razgovor može na našem jeziku. Firma radi „sa svojim timom i partnerskim firmama“, pa je broj zaposlenih nepoznat. Zvati direktno. Rezerva, slično kao Pleinimmo.",
     vecKontaktirano: false,
   },
 
