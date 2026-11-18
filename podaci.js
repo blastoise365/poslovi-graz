@@ -550,7 +550,7 @@ const POSLOVI = [
       "13.11.2026 sa willhaben-a i b-cc.at (početna, tim, impresum): oglas prvi put objavljen 24.10.2026, obnovljen 07.11.2026, važi do 23.11.2026 — „Standort: Graz & Steiermark | Vollzeit“, „Monatliches Bruttogehalt ab 3.000 € mit Bereitschaft zur Überzahlung“, „Eine abgeschlossene handwerkliche Ausbildung ist von Vorteil, aber nicht zwingend erforderlich“, „Gute Deutschkenntnisse für die Kommunikation auf der Baustelle“, vozačka B. Kontakt u oglasu: „BM DI Thomas Lechner, E-Mail: lechner@b-cc.at“. Sajt firme: „Schadensanierung & Trocknung durch Baumeister“ — „Leckortung, Bautrocknung, Schimmelsanierung, Versicherungsabrechnung“. Impresum: direktor Univ.-Lekt. BM Dipl.-Ing. Thomas Lechner, FN 643559k.",
     napomena:
       "NOVA FIRMA, profil skoro kao Belfor: traženje curenja, sušenje, buđ i sanacija posle štete, obračun direktno sa osiguranjem. Oglas je za „Sanierungsteam“: suvi zid i gletovanje, molerski radovi, manji podovi i pločice, fasada, i održavanje za upravnike zgrada. Traže samostalnog čoveka koji sam vodi manje gradilište i koordinira podizvođače — više od pomoćnika, ali tačno ono što je radio. Nemački samo „gut“ za gradilište, škola nije uslov. Mala, nova firma (direktor je inženjer i veštak). U timu je Ing. Svetozar Delcev (vodi nadzor na infrastrukturi) — po imenu verovatno naš; razgovor ipak voditi sa Lechnerom ili Krivitschem (šef sanacije). Kancelarija pon–čet 08–17, pet 08–12. OGLAS ISTIČE 23.11.2026 — javiti se odmah, prijava mejlom na lechner@b-cc.at.",
-    vecKontaktirano: false,
+    vecKontaktirano: true,
   },
   {
     id: "kompetenz-premstaetten",
@@ -588,7 +588,7 @@ const POSLOVI = [
       "13.11.2026 sa ifm.team (sanacija, kontakt, karijera) i karriere.at: filijala Graz je u Wielandgasse 2, tel. +43 316 908 900 0. Firma ima odeljenje „Sanierung von Brand-, Wasser- und Sturmschäden“. Na karriere.at, među isteklim oglasima za Graz, stoje „Allrounder (m/w) Brand- und Wasserschadensanierung“ (11.1.2026, „ab 3.200 € monatlich“) i „Techniker (m/w) für Brand- und Wasserschadensanierung“ (13.9.2024, od 2.800 €). Sada su na sajtu otvorena samo 4 mesta, u Beču i Linzu (među njima „Projektleiter Wasserschadensanierung“ u Beču). Na karijernoj stranici piše „Bewerben Sie sich … auch gerne initiativ. Jede Bewerbung wird … beantwortet.“",
     napomena:
       "NOVA FIRMA: velika firma za upravljanje zgradama sa 6 filijala, a sanacija šteta od vode i požara joj je jedna od glavnih usluga. Za Graz su već dva puta tražili baš njegov profil (Allrounder/Techniker za sanaciju, od 3.200 €). Nudi 6 nedelja godišnjeg odmora, službeni auto i mobilni. Sada oglasa za Graz nema: pozvati filijalu u Grazu, pitati ko vodi sanaciju i da li ponovo traže Allroundera, pa poslati inicijativnu prijavu na bewerbung@ifm.team. Na sajtu se kao radnik na sanaciji pojavljuje „Mujacic M., seit 2020“ (filijala nije navedena), a u penziju je otišao Nenad Radojevic — u firmi dakle ima naših ljudi.",
-    vecKontaktirano: false,
+    vecKontaktirano: true,
   },
   {
     id: "leckorter-graz",
