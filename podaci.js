@@ -53,7 +53,7 @@ const POSLOVI = [
       "13.11.2026 sa tsd.at (oglasi, stranica filijale Graz): sva tri oglasa za Graz i dalje otvorena. NOVO: na sajtu sada stoje mesečne plate — Trocknungsmonteur 3.165 €, Bodenleger 3.070 €, Bautechniker 3.595 € bruto („Gehalt: 3.165,00 €/Monat“, uz „Überzahlung je nach Qualifikation“). Trocknungsmonteur i Bautechniker sada važe do 31.03.2027, Bodenleger i dalje do 31.12.2026. NOVO: sekretarica za Graz je Elke Flachberger (office@tsd.at, +43 662 48 08 44). Miroslav Stojakovic, mobilni +43 664 88 44 08 51, graz@tsd.at i Plabutscherstraße 18 — bez promena.",
     napomena:
       "Identičan profil kao Belfor (požar + voda od 1991), 7 lokacija, preko 100 zaposlenih. Trocknungsmonteur u Grazu je tačno njegov posao: „Auf- und Abbau der Trocknungen bei unseren Wasserschäden und Brandschäden“ — zanat (instalater ili električar) je prednost, ali nije uslov. ŠEF FILIJALE JE MIROSLAV STOJAKOVIC — po imenu verovatno naš čovek: zvati njega direktno na mobilni. Prijava pisano na graz@tsd.at ili stojakovic@tsd.at. Traže nemački „in Wort und Schrift“. Druga dva oglasa (Bodenleger, Bautechniker): tsd.at/tsd-jobangebote.",
-    vecKontaktirano: false,
+    status: "prijavio",
   },
   {
     id: "polygon-at",
