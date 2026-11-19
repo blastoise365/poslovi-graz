@@ -187,7 +187,7 @@ const POSLOVI = [
       "13.11.2026 sa trummer-sanierung.at (karriere, impresum): NOVO — dva objavljena oglasa: Aussendienst/Projektleiter (puno radno vreme, Kalsdorf/Graz, traži tehničku školu ili dugogodišnje iskustvo u građevini i dobar nemački) i čistačica (15 h nedeljno). Poziv „Wir suchen laufend Verstärkung … auch ohne ausgeschriebene Stelle“ i Montage („Trocknung aufstellen, Schäden sanieren“) i dalje stoje. NOVO: prijave na bewerbung@trummer.org. Alexandra i Rene Trummer, zentrale@trummer.org, 03135 20612, Hauptstraße 305 — bez promena.",
     napomena:
       "Regionalna firma, dug staž u sušenju i sanaciji buđi. Nema objavljenih oglasa, ALI na Karriere stranici izričito pišu: „Wir suchen laufend Verstärkung — im Innendienst wie auf der Baustelle. Schreiben Sie uns, auch ohne ausgeschriebene Stelle.“ (tražimo stalno, pišite nam i bez oglasa). Primaju prijave za Montage („Trocknung aufstellen, Schäden sanieren“), Innendienst, Lager i Außendienst — Montage je njegovo. Manji tim, lakše da ga prime na razgovor nego u velikoj grupi.",
-    vecKontaktirano: false,
+    vecKontaktirano: true,
   },
   {
     id: "lts-graz",
@@ -206,7 +206,7 @@ const POSLOVI = [
       "19.11.2026 sa lts-group.com/karriere/trocknungsmonteur: oglas stoji. Zadaci: „Fachgerechter Auf- und Abbau von Trocknungsgeräten und Entfeuchtungsanlagen“, „Durchführung von Feuchtigkeitsmessungen“, „Wartung und Pflege der Trocknungs- und Entfeuchtungsgeräte“, „Einsatz vorwiegend im privaten Kundenbereich“. Traže: „Mehrjährige Erfahrung in der Gebäudetrocknung“, „Sicherer Umgang mit Trocknungsgeräten“, „Erfahrung auf Sanierungsbaustellen ist ein Plus“, „Gute Deutschkenntnisse in Wort und Schrift“, „Führerschein der Klasse B“. Plata: „abhängig von Erfahrung und Qualifikation, mit Überzahlung je nach Ausbildung und Praxis“ — bez iznosa. MESTO RADA NIJE NAVEDENO; na stranici za Leckorter isti oglas stoji „in Wien“. Prijava piše office@lts-service.at, a link vodi na ooe@ (Gornja Austrija). Oglas za Leckorter traži iskustvo kao „Leckortungstechniker oder Installateur“ — to nije njegovo. Dominik Degen i Petersgasse 34 — bez promena od 13.11.",
     napomena:
       "Oglas za Trocknungsmonteur-a je tačno njegov Belfor posao: postavlja i skida opremu za sušenje i odvlaživanje, meri vlagu, održava uređaje. Traže više godina iskustva u sušenju objekata, a iskustvo na gradilištima sanacije je plus — on ima oba. Pismeni nemački („in Wort und Schrift“) i vozačka B su uslov. Oglas za Leckorter-a (traženje curenja) NIJE za njega — traže instalatera ili tehničara za curenje. PAŽNJA: oglas ne kaže u kojoj filijali je mesto (jedna verzija kaže Beč). Zato NE slati mejl naslepo: prvo pozvati Dominika Degena, šefa filijale u Grazu, na +43 670 608 64 61 i pitati: „Suchen Sie einen Trocknungsmonteur für Graz?“ Ako kaže da, CV poslati direktno njemu (dominik.degen@lts-service.at) ili na stmk@lts-service.at — ne na office@ iz oglasa. Porodična firma, sanacija posle požara i vode, filijale širom Austrije.",
-    vecKontaktirano: false,
+    vecKontaktirano: true,
   },
   {
     id: "brugger-graz",
