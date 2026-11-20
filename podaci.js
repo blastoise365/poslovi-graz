@@ -339,7 +339,7 @@ const POSLOVI = [
       "13.11.2026 sa majcen-bau.at (oglas, Jobs, Team Graz, kontakt): oglas „Sanierungsfachkraft / Allroundler“ i dalje stoji (i dalje iz juna 2024), plata ista — „lt. KV für Facharbeiter € 3.185,60“. NOVO: u timu Graz postoji čovek baš za odvlaživanje — Daniel Passeil, „Entfeuchtung & Sanierung“, +43 664 84 55 279, entfeuchtung@majcen-bau.at; direktor je Ing. Harald Majcen. Adresa u samom oglasu (Mitterstraße 121) je stara — važi Brunnenfeldstraße 25–27. Na sajtu stoje i stari oglasi za Fliesenleger/in i Maler/in u Grazu (iz 2022). Među imenima u timu Graz nema naših.",
     napomena:
       "NOVA FIRMA odmah kraj Graza, profil skoro 1:1: odvlaživanje, sanacija, traženje curenja. Oglas traži iskustvo u sanaciji (suvi zid, malter, pločice, hidroizolacija, podovi, molerski radovi) i spremnost da se nauči odvlaživanje — to on već zna. Oglas je star (jun 2024), zato prvo pozvati Daniela Passeila (odvlaživanje, +43 664 84 55 279) i pitati da li još traže; ako ne — inicijativna prijava.",
-    vecKontaktirano: false,
+    vecKontaktirano: true,
   },
   {
     id: "adecco-graz",
